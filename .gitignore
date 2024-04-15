@@ -6,7 +6,7 @@ node_modules
 # dependencies
 .idea
 node_modules
-.env
+#.env
 .env.local
 .env.production
 
