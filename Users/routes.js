@@ -34,6 +34,10 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
+    if (!req.session.currentUser) {
+      res.status(401).send("Not logged in");
+      return;
+    }
     let currentUser = req.session["currentUser"];
     currentUser = globalCurrentUser;
     res.json(currentUser);
