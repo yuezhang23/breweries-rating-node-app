@@ -36,10 +36,6 @@ export default function UserRoutes(app) {
   const profile = async (req, res) => {
     let currentUser = req.session["currentUser"];
     currentUser = globalCurrentUser;
-    if (!currentUser) {
-      res.sendStatus(401);
-      return;
-    }
     res.json(currentUser);
   };
 
@@ -48,7 +44,7 @@ export default function UserRoutes(app) {
     const newUser = req.body
     try {
       if (!newUser.username || !newUser.password || newUser.username.trim() === "" 
-        || newUser.firstname.trim() === "" || newUser.lastname.trim() === "" || newUser.email.trim() === "") {
+        || newUser.firstName.trim() === "" || newUser.lastName.trim() === "" || newUser.email.trim() === "") {
         throw new Error("Username, password, first and last name and email are required.");
       }
       const existingUser = await dao.checkUsernameExists(newUser.username, newUser._id);
@@ -84,7 +80,7 @@ export default function UserRoutes(app) {
     const newUser = req.body
     try {
       if (!newUser.username || !newUser.password || newUser.username.trim() === "" 
-        || newUser.firstname.trim() === "" || newUser.lastname.trim() === "" || newUser.email.trim() === "") {
+        || newUser.firstName.trim() === "" || newUser.lastName.trim() === "" || newUser.email.trim() === "") {
         throw new Error("Username, password, first and last name and email are required");
       }
       const user = await dao.findUserByUsername(req.body.username);
@@ -110,6 +106,7 @@ export default function UserRoutes(app) {
   app.post("/api/users", createUser);
   app.delete("/api/users/:userId", deleteUser);
   app.post("/api/users/signin", signin);
+
   app.post("/api/users/profile", profile);
   app.put("/api/users/:userId", updateUser);
   app.get("/api/users", findAllUsers);
