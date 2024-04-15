@@ -22,7 +22,6 @@ export default function UserRoutes(app) {
     const currentUser = await dao.findUserByCredentials(username, password);
     try {
       if (currentUser) {
-        req.session["currentUser"] = currentUser;
         globalCurrentUser = currentUser;
         res.json(currentUser);
       } else {
@@ -34,12 +33,11 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    if (!req.session.currentUser) {
+    const currentUser = globalCurrentUser;
+    if (!currentUser) {
       res.status(401).send("Not logged in");
       return;
     }
-    let currentUser = req.session["currentUser"];
-    currentUser = globalCurrentUser;
     res.json(currentUser);
   };
 
@@ -92,7 +90,6 @@ export default function UserRoutes(app) {
         throw new Error("Username already taken");
       }
       const currentUser = await dao.createUser(req.body);
-      req.session["currentUser"] = currentUser;
       globalCurrentUser = currentUser;
       res.json(currentUser);
     } catch (error) {
@@ -102,7 +99,6 @@ export default function UserRoutes(app) {
   };
 
   const signout = (req, res) => {
-    req.session.destroy();
     globalCurrentUser = null;
     res.sendStatus(200);
   };
