@@ -32,4 +32,5 @@ app.use(cors({
 }));
 app.use(express.json());
 UserRoutes(app);
+Test(app);
 app.listen(process.env.PORT || 4000);
