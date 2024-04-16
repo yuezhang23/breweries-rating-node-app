@@ -15,7 +15,7 @@ const app = express();
 
 app.use(cors({
   credentials: true,
-  origin: process.env.FRONTEND_URL // in .env and environment var
+  origin: [process.env.FRONTEND_URL, "http://localhost:3000"] // in .env and environment var
 }));
 
 const sessionOptions = {
@@ -23,6 +23,14 @@ const sessionOptions = {
   resave: false,
   saveUninitialized: false,
 };
+if (process.env.NODE_ENV !== "development") {
+  sessionOptions.proxy = true;
+  sessionOptions.cookie = {
+    sameSite: "none",
+    secure: true,
+    domain: process.env.HTTP_SERVER_DOMAIN,
+  };
+}
 app.use(session(sessionOptions));
 app.use(express.json());
 UserRoutes(app);

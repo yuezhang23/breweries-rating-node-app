@@ -55,7 +55,7 @@ export default function UserRoutes(app) {
       }  
       const status = await dao.updateUser(userId, req.body);
       const currentUser = await dao.findUserById(userId);
-      res.json(status);
+      res.json(currentUser);
     } catch (error) {
       res.status(400).json({ message: error.message });
     } 
@@ -89,7 +89,7 @@ export default function UserRoutes(app) {
       if (user) {
         throw new Error("Username already taken");
       }
-      const currentUser = await dao.createUser(req.body);
+      const currentUser = await dao.createUser(newUser);
       globalCurrentUser = currentUser;
       res.json(currentUser);
     } catch (error) {
