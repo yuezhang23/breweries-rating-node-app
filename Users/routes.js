@@ -1,5 +1,4 @@
 import * as dao from "./dao.js";
-let globalCurrentUser = null; 
 
 export default function UserRoutes(app) {
 
@@ -22,7 +21,7 @@ export default function UserRoutes(app) {
     const currentUser = await dao.findUserByCredentials(username, password);
     try {
       if (currentUser) {
-        globalCurrentUser = currentUser;
+        req.session.user = currentUser;
         res.json(currentUser);
       } else {
         throw new Error("Invalid Credential");
@@ -33,11 +32,11 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    const currentUser = globalCurrentUser;
-    if (!currentUser) {
+    if (!req.session.user) {
       res.status(401).send("Not logged in");
       return;
     }
+    const currentUser = await dao.findUserById(req.session.user._id);
     res.json(currentUser);
   };
 
@@ -55,6 +54,7 @@ export default function UserRoutes(app) {
       }  
       const status = await dao.updateUser(userId, req.body);
       const currentUser = await dao.findUserById(userId);
+      req.session.user = currentUser;
       res.json(currentUser);
     } catch (error) {
       res.status(400).json({ message: error.message });
@@ -90,7 +90,6 @@ export default function UserRoutes(app) {
         throw new Error("Username already taken");
       }
       const currentUser = await dao.createUser(newUser);
-      globalCurrentUser = currentUser;
       res.json(currentUser);
     } catch (error) {
       res.status(400).json(
@@ -99,7 +98,7 @@ export default function UserRoutes(app) {
   };
 
   const signout = (req, res) => {
-    globalCurrentUser = null;
+    req.session.destroy();
     res.sendStatus(200);
   };
 
