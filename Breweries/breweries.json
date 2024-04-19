@@ -1,0 +1,239 @@
+[
+    {
+        "name": "HopSip Brewery",
+        "brewery_type": "micro",
+        "phone": "4058160490",
+        "address": {
+            "street": "1635 River Road",
+            "postal_code": 49684,
+            "city": "Traverse City",
+            "state": "Michigan",
+            "country": "United States"
+        },
+        "website_url": "http://www.405brewing.com",
+        "price_per_person": "$25-40",
+        "likes": 4127,
+        "followers": 8349,
+        "reviews": [
+            {
+                "username": "beerlover88",
+                "comments": ["Great atmosphere and friendly staff!", "Wide variety of beers."]
+            }
+        ]
+    },
+    {
+        "name": "Brewers Delight",
+        "brewery_type": "micro",
+        "phone": "5129211545",
+        "address": {
+            "street": "32 Cherry Avenue",
+            "postal_code": 10001,
+            "city": "London",
+            "state": "England",
+            "country": "United Kingdom"
+        },
+        "website_url": "http://www.512brewing.com",
+        "price_per_person": "£20-35",
+        "likes": 7542,
+        "followers": 2167,
+        "reviews": [
+            {
+                "username": "alexp",
+                "comments": ["Loved their IPA selection!", "Cozy atmosphere."]
+            }
+        ]
+    },
+    {
+        "name": "Malty Mates Brewing",
+        "brewery_type": "micro",
+        "phone": "2624847553",
+        "address": {
+            "street": "788 Rainy Lane",
+            "postal_code": 75001,
+            "city": "Paris",
+            "state": "Île-de-France",
+            "country": "France"
+        },
+        "website_url": "https://www.1ofusbrewing.com",
+        "price_per_person": "€25-45",
+        "likes": 13394,
+        "followers": 6668,
+        "reviews": [
+            {
+                "username": "craftbeerfan23",
+                "comments": ["Great place for a cold one after work!", "Friendly staff."]
+            }
+        ]
+    },
+    {
+        "name": "Golden Grain Brewery",
+        "brewery_type": "large",
+        "phone": "6195782311",
+        "address": {
+            "street": "212 Hops Street",
+            "postal_code": 92101,
+            "city": "Berlin",
+            "state": "Berlin",
+            "country": "Germany"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "€20-40",
+        "likes": 11862,
+        "followers": 582,
+        "reviews": [
+            {
+                "username": "beerguy77",
+                "comments": ["Good beer, nice ambiance.", "Live music on weekends is a plus!"]
+            }
+        ]
+    },
+    {
+        "name": "Crafty Brews",
+        "brewery_type": "large",
+        "phone": "5415851007",
+        "address": {
+            "street": "45 Brewster Street",
+            "postal_code": "10010",
+            "city": "Beijing",
+            "state": "Beijing",
+            "country": "China"
+        },
+        "price_per_person": "¥120-200",
+        "likes": 3167,
+        "followers": 3817,
+        "reviews": [
+            {
+                "username": "hopsNSuds",
+                "comments": ["Great selection of local brews!", "Friendly staff.", "Outdoor seating is awesome!"]
+            },
+            {
+                "username": "brewmaster22",
+                "comments": ["Fantastic atmosphere!", "Love the beer flights."]
+            },
+            {
+                "username": "craftybeerlover",
+                "comments": ["Really enjoyed the seasonal beers!", "Friendly service."]
+            },
+            {
+                "username": "beerenthusiast99",
+                "comments": ["Great place to hang out with friends!", "Wide range of craft beers."]
+            }
+        ]
+    },
+    {
+        "name": "Barrel House Brewing",
+        "brewery_type": "large",
+        "phone": "2083445870",
+        "address": {
+            "street": "99 Brewer Avenue",
+            "postal_code": "200002",
+            "city": "Seoul",
+            "state": "Seoul",
+            "country": "South Korea"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "₩25000-40000",
+        "likes": 5503,
+        "followers": 6425,
+        "reviews": [
+            {
+                "username": "hophead22",
+                "comments": ["The food here is amazing too!", "Great place for friends to gather.", "Try the pretzels!"]
+            },
+            {
+                "username": "brewmaster99",
+                "comments": ["Really enjoyed the IPA!", "Friendly staff."]
+            },
+            {
+                "username": "alelover",
+                "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
+            }
+        ]
+    },
+    {
+        "name": "Crafty Tap Room",
+        "brewery_type": "large",
+        "phone": "7205738992",
+        "address": {
+            "street": "50 Hop Street",
+            "postal_code": "10002",
+            "city": "Dublin",
+            "state": "Leinster",
+            "country": "Ireland"
+        },
+        "price_per_person": "€25-45",
+        "likes": 10751,
+        "followers": 4483,
+        "reviews": [
+            {
+                "username": "brewlover99",
+                "comments": ["Great spot to chill with friends!", "Love their seasonal beers.", "Try the stout!"]
+            }
+        ]
+    },
+    {
+        "name": "Frothy Brew Co.",
+        "brewery_type": "large",
+        "phone": "5415851007",
+        "address": {
+            "street": "25 Lager Lane",
+            "postal_code": 97701,
+            "city": "Galway",
+            "state": "Connacht",
+            "country": "Ireland"
+        },
+        "website_url": "http://www.fakebrewery.com",
+        "price_per_person": "€200-600",
+        "likes": 17568,
+        "followers": 3364,
+        "reviews": [
+            {
+                "username": "brewenthusiast",
+                "comments": ["Loved the outdoor seating area!", "Great place to watch sports."]
+            }
+        ]
+    },
+    {
+        "name": "Hoppy Haven",
+        "brewery_type": "large",
+        "phone": "5415851007",
+        "address": {
+            "street": "17 Ale Avenue",
+            "postal_code": 97701,
+            "city": "Paris",
+            "state": "Île-de-France",
+            "country": "France"
+        },
+        "price_per_person": "€25-40",
+        "likes": 14199,
+        "followers": 6819,
+        "reviews": [
+            {
+                "username": "beernerd87",
+                "comments": ["Great beer selection and friendly staff!", "Awesome happy hour deals."]
+            }
+        ]
+    },
+    {
+        "name": "Barley Brew House",
+        "brewery_type": "large",
+        "phone": "2083445870",
+        "address": {
+            "street": "75 Stout Street",
+            "postal_code": 83702,
+            "city": "Berlin",
+            "state": "Berlin",
+            "country": "Germany"
+        },
+        "website_url": "http://www.fakebrewery.com",
+        "price_per_person": "€20-200",
+        "likes": 12205,
+        "followers": 9642,
+        "reviews": [
+            {
+                "username": "brewcrew22",
+                "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
+            }
+        ]
+    }
+]
