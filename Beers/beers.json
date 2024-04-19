@@ -1,0 +1,495 @@
+[
+    {
+        "beer_name": "Hoppy IPA",
+        "flavor_profile": ["hoppy", "citrusy", "bitter"],
+        "beer_type": "India Pale Ale (IPA)",
+        "ingredients": {
+            "hops": ["Cascade", "Centennial", "Simcoe"],
+            "malts": ["Pale Ale", "Crystal"],
+            "yeast": "American Ale"
+        },    
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            }
+
+        ],
+        "production_year": 2024,
+        "nutritional_info": {
+            "calories": 200,
+            "carbohydrates": 15,
+            "protein": 2,
+            "fat": 0,
+            "sugar": 2
+        },
+        "ABV": "6.5%"
+    },
+    {
+        "beer_name": "Stout & Bold",
+        "flavor_profile": ["roasty", "chocolatey", "creamy"],
+        "beer_type": "Stout",
+        "ingredients": {
+            "malts": ["Roasted Barley", "Chocolate", "Black Patent"],
+            "hops": ["Willamette", "Fuggle"],
+            "yeast": "English Ale"
+        },
+       
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            }
+
+        ],
+
+        "production_year": 2024,
+        "nutritional_info": {
+            "calories": 250,
+            "carbohydrates": 20,
+            "protein": 3,
+            "fat": 1,
+            "sugar": 3
+        },
+        "ABV": "7.2%"
+    },
+    {
+        "beer_name": "Amber Ale",
+        "flavor_profile": ["malty", "caramel", "toasty"],
+        "beer_type": "Amber Ale",
+        "ingredients": {
+            "malts": ["Pale", "Crystal", "Victory"],
+            "hops": ["Cascade", "Amarillo"],
+            "yeast": "American Ale"
+        },
+       
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be5",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name":"10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be9",
+                "brewery_name":"10 Barrel Brewing Co - Bend Pub"
+            }
+
+        ],
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 220,
+            "carbohydrates": 18,
+            "protein": 2.5,
+            "fat": 0.5,
+            "sugar": 4
+        },
+        "ABV": "5.8%"
+    },
+    {
+        "beer_name": "Belgian Tripel",
+        "flavor_profile": ["spicy", "fruity", "sweet"],
+        "beer_type": "Belgian Tripel",
+        "ingredients": {
+            "malts": ["Pilsner", "Munich", "CaraMunich"],
+            "hops": ["Saaz", "Tettnang"],
+            "yeast": "Belgian Ale"
+        },
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be5",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf1",
+                "brewery_name":"Barrel House Brewing"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf2",
+                "brewery_name": "Crafty Tap Room"
+            }
+        
+        ],      
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 280,
+            "carbohydrates": 22,
+            "protein": 3,
+            "fat": 0.5,
+            "sugar": 5
+        },
+        "ABV": "9.5%"
+    },
+    {
+        "beer_name": "Pale Lager",
+        "flavor_profile": ["crisp", "clean", "refreshing"],
+        "beer_type": "Pale Lager",
+        "ingredients": {
+            "malts": ["Pilsner", "Vienna"],
+            "hops": ["Saaz", "Hallertau"],
+            "yeast": "American Lager"
+        },
+      
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf5",
+                "brewery_name":  "Barley Brew House"
+            }
+        ],
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 180,
+            "carbohydrates": 12,
+            "protein": 2,
+            "fat": 0,
+            "sugar": 1
+        },
+        "ABV": "4.2%"
+    },
+    {
+        "beer_name": "Wheat Beer",
+        "flavor_profile": ["fruity", "spicy", "refreshing"],
+        "beer_type": "Wheat Beer",
+        "ingredients": {
+            "malts": ["Wheat", "Pilsner"],
+            "hops": ["Hallertau", "Tettnang"],
+            "yeast": "Hefeweizen"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 220,
+            "carbohydrates": 16,
+            "protein": 3,
+            "fat": 0.5,
+            "sugar": 3
+        },
+        "ABV": "5.0%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            }
+        ]
+    },
+    {
+        "beer_name": "Porter",
+        "flavor_profile": ["roasty", "chocolatey", "creamy"],
+        "beer_type": "Porter",
+        "ingredients": {
+            "malts": ["Brown", "Chocolate", "Black Patent"],
+            "hops": ["Fuggle", "East Kent Goldings"],
+            "yeast": "English Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 250,
+            "carbohydrates": 18,
+            "protein": 3.5,
+            "fat": 1,
+            "sugar": 4
+        },
+        "ABV": "6.8%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            }
+        ]
+    },
+    {
+        "beer_name": "Pilsner",
+        "flavor_profile": ["crisp", "bitter", "hoppy"],
+        "beer_type": "Pilsner",
+        "ingredients": {
+            "malts": ["Pilsner", "Munich"],
+            "hops": ["Saaz", "Tettnang"],
+            "yeast": "Czech Lager"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 190,
+            "carbohydrates": 15,
+            "protein": 2.5,
+            "fat": 0,
+            "sugar": 2
+        },
+        "ABV": "4.7%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf4",
+                "brewery_name": "Hoppy Haven"
+            }
+        ]
+    },
+    {
+        "beer_name": "Sour Ale",
+        "flavor_profile": ["tart", "fruity", "complex"],
+        "beer_type": "Sour Ale",
+        "ingredients": {
+            "malts": ["Pale", "Wheat", "Munich"],
+            "hops": ["Styrian Goldings", "East Kent Goldings"],
+            "yeast": "Mixed Fermentation"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 220,
+            "carbohydrates": 16,
+            "protein": 2.5,
+            "fat": 0,
+            "sugar": 3
+        },
+        "ABV": "5.5%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be4",
+                "brewery_name": "1 of Us Brewing Company"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf4",
+                "brewery_name": "Hoppy Haven"
+            }
+        ]
+    },
+    {
+        "beer_name": "Barleywine",
+        "flavor_profile": ["rich", "caramel", "fruity"],
+        "beer_type": "Barleywine",
+        "ingredients": {
+            "malts": ["Pale", "Crystal", "Special B"],
+            "hops": ["Chinook", "Cascade"],
+            "yeast": "English Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 300,
+            "carbohydrates": 25,
+            "protein": 3.5,
+            "fat": 1,
+            "sugar": 5
+        },
+        "ABV": "10.2%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf1",
+                "brewery_name": "Barrel House Brewing"
+            }
+        ]
+    },
+    {
+        "beer_name": "Brown Ale",
+        "flavor_profile": ["nutty", "caramel", "malty"],
+        "beer_type": "Brown Ale",
+        "ingredients": {
+            "malts": ["Pale", "Crystal", "Chocolate"],
+            "hops": ["Fuggle", "East Kent Goldings"],
+            "yeast": "English Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 240,
+            "carbohydrates": 20,
+            "protein": 3,
+            "fat": 1,
+            "sugar": 4
+        },
+        "ABV": "6.0%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf0",
+                "brewery_name": "Crafty Brews"
+            }
+        ]
+    },
+    {
+        "beer_name": "Hefeweizen",
+        "flavor_profile": ["fruity", "spicy", "refreshing"],
+        "beer_type": "Hefeweizen",
+        "ingredients": {
+            "malts": ["Wheat", "Pilsner"],
+            "hops": ["Hallertau", "Tettnang"],
+            "yeast": "Hefeweizen"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 220,
+            "carbohydrates": 18,
+            "protein": 3,
+            "fat": 0.5,
+            "sugar": 3
+        },
+        "ABV": "5.2%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bea",
+                "brewery_name": "10 Barrel Brewing Co - Boise"
+            }
+        ]
+    },
+    {
+        "beer_name": "Red Ale",
+        "flavor_profile": ["malty", "caramel", "toasty"],
+        "beer_type": "Red Ale",
+        "ingredients": {
+            "malts": ["Pale", "Caramel", "Roasted Barley"],
+            "hops": ["Cascade", "Amarillo"],
+            "yeast": "Irish Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 230,
+            "carbohydrates": 19,
+            "protein": 2.5,
+            "fat": 0.5,
+            "sugar": 4
+        },
+        "ABV": "5.6%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be8",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bec",
+                "brewery_name": "HopSip Brewery"
+            }
+        ]
+    },
+    {
+        "beer_name": "Scottish Ale",
+        "flavor_profile": ["malty", "caramel", "roasty"],
+        "beer_type": "Scottish Ale",
+        "ingredients": {
+            "malts": ["Maris Otter", "Crystal", "Roasted Barley"],
+            "hops": ["East Kent Goldings", "Fuggle"],
+            "yeast": "Scottish Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 240,
+            "carbohydrates": 20,
+            "protein": 3,
+            "fat": 0.5,
+            "sugar": 3.5
+        },
+        "ABV": "6.3%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bed",
+                "brewery_name": "Brewers Delight"
+            }
+        ]
+    },
+    {
+        "beer_name": "Session IPA",
+        "flavor_profile": ["hoppy", "citrusy", "light"],
+        "beer_type": "Session IPA",
+        "ingredients": {
+            "hops": ["Citra", "Mosaic", "Amarillo"],
+            "malts": ["Pale Ale", "Munich"],
+            "yeast": "American Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 180,
+            "carbohydrates": 14,
+            "protein": 2,
+            "fat": 0,
+            "sugar": 2
+        },
+        "ABV": "4.8%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bef",
+                "brewery_name": "Golden Grain Brewery"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf1",
+                "brewery_name": "Barrel House Brewing"
+            }
+        ]
+    },
+    {
+        "beer_name": "Cream Ale",
+        "flavor_profile": ["smooth", "sweet", "balanced"],
+        "beer_type": "Cream Ale",
+        "ingredients": {
+            "malts": ["Pale", "Corn"],
+            "hops": ["Cluster", "Liberty"],
+            "yeast": "American Ale"
+        },
+        "production_year": 2023,
+        "nutritional_info": {
+            "calories": 170,
+            "carbohydrates": 13,
+            "protein": 2,
+            "fat": 0,
+            "sugar": 1.5
+        },
+        "ABV": "4.5%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114bea",
+                "brewery_name": "10 Barrel Brewing Co - Boise"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf0",
+                "brewery_name": "Crafty Brews"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf5",
+                "brewery_name": "Barley Brew House"
+            }
+        ]
+    }
+]
+
