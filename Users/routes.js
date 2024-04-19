@@ -108,6 +108,7 @@ export default function UserRoutes(app) {
 
   app.post("/api/users/profile", profile);
   app.put("/api/users/:userId", updateUser);
+
   app.get("/api/users", findAllUsers);
   app.get("/api/users/:userId", findUserById);
   app.post("/api/users/signup", signup);

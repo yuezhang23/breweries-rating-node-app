@@ -3,6 +3,7 @@ import express from 'express';
 import session from "express-session";
 import mongoose from "mongoose";
 import cors from 'cors';
+import Breweries from "./Breweries/routes.js";
 
 import UserRoutes from "./Users/routes.js";
 import Test from "./Test.js";
@@ -35,4 +36,5 @@ app.use(session(sessionOptions));
 app.use(express.json());
 UserRoutes(app);
 Test(app);
+Breweries(app);
 app.listen(process.env.PORT || 4000);
