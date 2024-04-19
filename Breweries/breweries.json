@@ -1,8 +1,189 @@
 [
     {
+        "id": "5128df48-79fc-4f0f-8b52-d06be54d0cec",
+        "name": "(405) Brewing Co",
+        "brewery_type": "micro",
+        "phone": "405-8160490",
+        "address": {
+        "street": "1716 Topeka St",
+        "postal_code": 73069,
+        "city": "Norman",
+        "state": "Oklahoma",
+        "country": "United States"
+        },
+        "website_url": "http://www.405brewing.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "9c5a66c8-cc13-416f-a5d9-0a769c87d318",
+        "name": "(512) Brewing Co",
+        "brewery_type": "micro",
+        "phone": "512-9211545",
+        "address": {
+        "street": "407 Radam Ln Ste F200",
+        "postal_code": 78745,
+        "city": "Austin",
+        "state": "Texas",
+        "country": "United States"
+        },
+        "website_url": "http://www.512brewing.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "34e8c68b-6146-453f-a4b9-1f6cd99a5ada",
+        "name": "1 of Us Brewing Company",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+        "street": "8100 Washington Ave",
+        "postal_code": 53406,
+        "city": "Mount Pleasant",
+        "state": "Wisconsin",
+        "country": "United States"
+        },
+        "website_url": "https://www.1ofusbrewing.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "ef970757-fe42-416f-931d-722451f1f59c",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "619-5782311",
+        "address": {
+        "street": "1501 E St",
+        "postal_code": 92101,
+        "city": "San Diego",
+        "state": "California",
+        "country": "United States"
+        },
+        "website_url": "http://10barrel.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "6d14b220-8926-4521-8d19-b98a2d6ec3db",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+        "street": "62970 18th St",
+        "postal_code": 97701,
+        "city": "Bend",
+        "state": "Oregon",
+        "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "e2e78bd8-80ff-4a61-a65c-3bfbd9d76ce2",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+        "street": "1135 NW Galveston Ave Ste B",
+        "postal_code": 97703,
+        "city": "Bend",
+        "state": "Oregon",
+        "country": "United States"
+        },
+        "website_url": null,
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "e432899b-7f58-455f-9c7b-9a6e2130a1e0",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "503-2241700",
+        "address": {
+        "street": "1411 NW Flanders St",
+        "postal_code": 97209,
+        "city": "Portland",
+        "state": "Oregon",
+        "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "9f1852da-c312-42da-9a31-097bac81c4c0",
+        "name": "10 Barrel Brewing Co - Bend Pub",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+        "street": "62950 NE 18th St",
+        "postal_code": 97701,
+        "city": "Bend",
+        "state": "Oregon",
+        "country": "United States"
+        },
+        "website_url": null,
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "ea4f30c0-bce6-416b-8904-fab4055a7362",
+        "name": "10 Barrel Brewing Co - Boise",
+        "brewery_type": "large",
+        "phone": "208-3445870",
+        "address": {
+        "street": "826 W Bannock St",
+        "postal_code": 83702,
+        "city": "Boise",
+        "state": "Idaho",
+        "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": "1988eb86-f0a2-4674-ba04-02454efa0d31",
+        "name": "10 Barrel Brewing Co - Denver",
+        "brewery_type": "large",
+        "phone": "720-5738992",
+        "address": {
+        "street": "2620 Walnut St",
+        "postal_code": 80205,
+        "city": "Denver",
+        "state": "Colorado",
+        "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": null,
+        "likes": 0,
+        "followers": 0,
+        "reviews": []
+    },
+    {
+        "id": null,
         "name": "HopSip Brewery",
         "brewery_type": "micro",
-        "phone": "4058160490",
+        "phone": "405-8160490",
         "address": {
             "street": "1635 River Road",
             "postal_code": 49684,
@@ -16,15 +197,16 @@
         "followers": 8349,
         "reviews": [
             {
-                "username": "beerlover88",
+                "userId": "9938746592",
                 "comments": ["Great atmosphere and friendly staff!", "Wide variety of beers."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Brewers Delight",
         "brewery_type": "micro",
-        "phone": "5129211545",
+        "phone": "512-9211545",
         "address": {
             "street": "32 Cherry Avenue",
             "postal_code": 10001,
@@ -38,15 +220,16 @@
         "followers": 2167,
         "reviews": [
             {
-                "username": "alexp",
+                "userId": "3567891240",
                 "comments": ["Loved their IPA selection!", "Cozy atmosphere."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Malty Mates Brewing",
         "brewery_type": "micro",
-        "phone": "2624847553",
+        "phone": "262-4847553",
         "address": {
             "street": "788 Rainy Lane",
             "postal_code": 75001,
@@ -60,15 +243,16 @@
         "followers": 6668,
         "reviews": [
             {
-                "username": "craftbeerfan23",
+                "userId": "1587643290",
                 "comments": ["Great place for a cold one after work!", "Friendly staff."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Golden Grain Brewery",
         "brewery_type": "large",
-        "phone": "6195782311",
+        "phone": "619-5782311",
         "address": {
             "street": "212 Hops Street",
             "postal_code": 92101,
@@ -82,15 +266,16 @@
         "followers": 582,
         "reviews": [
             {
-                "username": "beerguy77",
+                "userId": "7452309816",
                 "comments": ["Good beer, nice ambiance.", "Live music on weekends is a plus!"]
             }
         ]
     },
     {
+        "id": null,
         "name": "Crafty Brews",
         "brewery_type": "large",
-        "phone": "5415851007",
+        "phone": "541-5851007",
         "address": {
             "street": "45 Brewster Street",
             "postal_code": "10010",
@@ -103,27 +288,28 @@
         "followers": 3817,
         "reviews": [
             {
-                "username": "hopsNSuds",
+                "userId": "8923476105",
                 "comments": ["Great selection of local brews!", "Friendly staff.", "Outdoor seating is awesome!"]
             },
             {
-                "username": "brewmaster22",
+                "userId": "1234567890",
                 "comments": ["Fantastic atmosphere!", "Love the beer flights."]
             },
             {
-                "username": "craftybeerlover",
+                "userId": "3487569201",
                 "comments": ["Really enjoyed the seasonal beers!", "Friendly service."]
             },
             {
-                "username": "beerenthusiast99",
+                "userId": "6792381450",
                 "comments": ["Great place to hang out with friends!", "Wide range of craft beers."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Barrel House Brewing",
         "brewery_type": "large",
-        "phone": "2083445870",
+        "phone": "208-3445870",
         "address": {
             "street": "99 Brewer Avenue",
             "postal_code": "200002",
@@ -137,23 +323,24 @@
         "followers": 6425,
         "reviews": [
             {
-                "username": "hophead22",
+                "userId": "1039847562",
                 "comments": ["The food here is amazing too!", "Great place for friends to gather.", "Try the pretzels!"]
             },
             {
-                "username": "brewmaster99",
+                "userId": "9823476051",
                 "comments": ["Really enjoyed the IPA!", "Friendly staff."]
             },
             {
-                "username": "alelover",
+                "userId": "5623894750",
                 "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Crafty Tap Room",
         "brewery_type": "large",
-        "phone": "7205738992",
+        "phone": "720-5738992",
         "address": {
             "street": "50 Hop Street",
             "postal_code": "10002",
@@ -166,15 +353,16 @@
         "followers": 4483,
         "reviews": [
             {
-                "username": "brewlover99",
+                "userId": "8763490251",
                 "comments": ["Great spot to chill with friends!", "Love their seasonal beers.", "Try the stout!"]
             }
         ]
     },
     {
+        "id": null,
         "name": "Frothy Brew Co.",
         "brewery_type": "large",
-        "phone": "5415851007",
+        "phone": "541-5851007",
         "address": {
             "street": "25 Lager Lane",
             "postal_code": 97701,
@@ -188,15 +376,16 @@
         "followers": 3364,
         "reviews": [
             {
-                "username": "brewenthusiast",
+                "userId": "2394875601",
                 "comments": ["Loved the outdoor seating area!", "Great place to watch sports."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Hoppy Haven",
         "brewery_type": "large",
-        "phone": "5415851007",
+        "phone": "541-5851007",
         "address": {
             "street": "17 Ale Avenue",
             "postal_code": 97701,
@@ -209,15 +398,16 @@
         "followers": 6819,
         "reviews": [
             {
-                "username": "beernerd87",
+                "userId": "3458790126",
                 "comments": ["Great beer selection and friendly staff!", "Awesome happy hour deals."]
             }
         ]
     },
     {
+        "id": null,
         "name": "Barley Brew House",
         "brewery_type": "large",
-        "phone": "2083445870",
+        "phone": "208-3445870",
         "address": {
             "street": "75 Stout Street",
             "postal_code": 83702,
@@ -231,7 +421,7 @@
         "followers": 9642,
         "reviews": [
             {
-                "username": "brewcrew22",
+                "userId": "1056784329",
                 "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
             }
         ]

@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import brewerySchema from "../Breweries/schema";
 
 const beerSchema = new mongoose.Schema({
     beer_name: { type: String, required: true },
@@ -9,12 +10,12 @@ const beerSchema = new mongoose.Schema({
         malts: [{ type: String }],
         yeast: { type: String }
     },
-    brewery_name: { type: String, required: true },
-    brewery_location: {
-        city: { type: String },
-        state: { type: String },
-        country: { type: String }
-    },
+    breweries : [
+        {
+            brewery_id : { type: String, required: true },
+            brewery_name: { type: String },
+        },
+    ],
     production_year: { type: Number },
     nutritional_info: {
         calories: { type: Number },

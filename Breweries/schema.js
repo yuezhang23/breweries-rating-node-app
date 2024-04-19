@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
 
-const supplierSchema = new mongoose.Schema(
+const brewerySchema = new mongoose.Schema(
     {
+        id : {type : String, default: null},
         name: {type : String, required : true, unique : true},
         description : String,
         brewery_type: {
             type: String,
-            enum: ["micro", "large", "brewpub"],
-            default: " ",},
+            enum: ["micro", "large", "brewpub", "other"],
+            default: "other",},
         phone: {type : String, required : true, default : '000-0000000'},
         address: {
             street: {type : String, required : true, unique : true},
@@ -22,11 +23,11 @@ const supplierSchema = new mongoose.Schema(
         followers : {type : Number, required : true, default : 0},
         reviews : [
             {
-                username : {type : String, required : true, unique : true},
+                userid : {type : String, default: " "},
                 comments : [String,]
             }
         ],
     },
   { collection: "breweries" });
 
-export default supplierSchema;
+export default brewerySchema;

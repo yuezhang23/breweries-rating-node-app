@@ -7,13 +7,18 @@
             "hops": ["Cascade", "Centennial", "Simcoe"],
             "malts": ["Pale Ale", "Crystal"],
             "yeast": "American Ale"
-        },
-        "brewery_name": "HopSip Brewery",
-        "brewery_location": {
-            "city": "Traverse City",
-            "state": "Michigan",
-            "country": "United States"
-        },
+        },    
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            }
+
+        ],
         "production_year": 2024,
         "nutritional_info": {
             "calories": 200,
@@ -33,12 +38,19 @@
             "hops": ["Willamette", "Fuggle"],
             "yeast": "English Ale"
         },
-        "brewery_name": "Malty Mates Brewing",
-        "brewery_location": {
-            "city": "Paris",
-            "state": "Île-de-France",
-            "country": "France"
-        },
+       
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            }
+
+        ],
+
         "production_year": 2024,
         "nutritional_info": {
             "calories": 250,
@@ -58,12 +70,22 @@
             "hops": ["Cascade", "Amarillo"],
             "yeast": "American Ale"
         },
-        "brewery_name": "Golden Brews",
-        "brewery_location": {
-            "city": "Denver",
-            "state": "Colorado",
-            "country": "United States"
-        },
+       
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be5",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name":"10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be9",
+                "brewery_name":"10 Barrel Brewing Co - Bend Pub"
+            }
+
+        ],
         "production_year": 2023,
         "nutritional_info": {
             "calories": 220,
@@ -83,12 +105,21 @@
             "hops": ["Saaz", "Tettnang"],
             "yeast": "Belgian Ale"
         },
-        "brewery_name": "Abbey Ales",
-        "brewery_location": {
-            "city": "Bruges",
-            "state": "West Flanders",
-            "country": "Belgium"
-        },
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be5",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf1",
+                "brewery_name":"Barrel House Brewing"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf2",
+                "brewery_name": "Crafty Tap Room"
+            }
+        
+        ],      
         "production_year": 2023,
         "nutritional_info": {
             "calories": 280,
@@ -108,12 +139,21 @@
             "hops": ["Saaz", "Hallertau"],
             "yeast": "American Lager"
         },
-        "brewery_name": "Clearwater Brewery",
-        "brewery_location": {
-            "city": "Sydney",
-            "state": "New South Wales",
-            "country": "Australia"
-        },
+      
+        "breweries" : [
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id" : "6622e041b3b1e38b24114bf5",
+                "brewery_name":  "Barley Brew House"
+            }
+        ],
         "production_year": 2023,
         "nutritional_info": {
             "calories": 180,
@@ -133,12 +173,6 @@
             "hops": ["Hallertau", "Tettnang"],
             "yeast": "Hefeweizen"
         },
-        "brewery_name": "Sunny Brews",
-        "brewery_location": {
-            "city": "Cape Town",
-            "state": "Western Cape",
-            "country": "South Africa"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 220,
@@ -147,7 +181,13 @@
             "fat": 0.5,
             "sugar": 3
         },
-        "ABV": "5.0%"
+        "ABV": "5.0%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            }
+        ]
     },
     {
         "beer_name": "Porter",
@@ -158,12 +198,6 @@
             "hops": ["Fuggle", "East Kent Goldings"],
             "yeast": "English Ale"
         },
-        "brewery_name": "Riverfront Brewing",
-        "brewery_location": {
-            "city": "Vancouver",
-            "state": "British Columbia",
-            "country": "Canada"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 250,
@@ -172,7 +206,13 @@
             "fat": 1,
             "sugar": 4
         },
-        "ABV": "6.8%"
+        "ABV": "6.8%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            }
+        ]
     },
     {
         "beer_name": "Pilsner",
@@ -183,12 +223,6 @@
             "hops": ["Saaz", "Tettnang"],
             "yeast": "Czech Lager"
         },
-        "brewery_name": "Alpine Brews",
-        "brewery_location": {
-            "city": "Innsbruck",
-            "state": "Tyrol",
-            "country": "Austria"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 190,
@@ -197,7 +231,17 @@
             "fat": 0,
             "sugar": 2
         },
-        "ABV": "4.7%"
+        "ABV": "4.7%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf4",
+                "brewery_name": "Hoppy Haven"
+            }
+        ]
     },
     {
         "beer_name": "Sour Ale",
@@ -208,12 +252,6 @@
             "hops": ["Styrian Goldings", "East Kent Goldings"],
             "yeast": "Mixed Fermentation"
         },
-        "brewery_name": "Tart Times Brewery",
-        "brewery_location": {
-            "city": "Portland",
-            "state": "Oregon",
-            "country": "United States"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 220,
@@ -222,7 +260,17 @@
             "fat": 0,
             "sugar": 3
         },
-        "ABV": "5.5%"
+        "ABV": "5.5%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be4",
+                "brewery_name": "1 of Us Brewing Company"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf4",
+                "brewery_name": "Hoppy Haven"
+            }
+        ]
     },
     {
         "beer_name": "Barleywine",
@@ -233,12 +281,6 @@
             "hops": ["Chinook", "Cascade"],
             "yeast": "English Ale"
         },
-        "brewery_name": "Barley's Best",
-        "brewery_location": {
-            "city": "London",
-            "state": "England",
-            "country": "United Kingdom"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 300,
@@ -247,7 +289,17 @@
             "fat": 1,
             "sugar": 5
         },
-        "ABV": "10.2%"
+        "ABV": "10.2%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf1",
+                "brewery_name": "Barrel House Brewing"
+            }
+        ]
     },
     {
         "beer_name": "Brown Ale",
@@ -258,12 +310,6 @@
             "hops": ["Fuggle", "East Kent Goldings"],
             "yeast": "English Ale"
         },
-        "brewery_name": "Brown Bear Brewery",
-        "brewery_location": {
-            "city": "Manchester",
-            "state": "England",
-            "country": "United Kingdom"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 240,
@@ -272,7 +318,21 @@
             "fat": 1,
             "sugar": 4
         },
-        "ABV": "6.0%"
+        "ABV": "6.0%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114beb",
+                "brewery_name": "10 Barrel Brewing Co - Denver"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf0",
+                "brewery_name": "Crafty Brews"
+            }
+        ]
     },
     {
         "beer_name": "Hefeweizen",
@@ -283,12 +343,6 @@
             "hops": ["Hallertau", "Tettnang"],
             "yeast": "Hefeweizen"
         },
-        "brewery_name": "Wheaty Brews",
-        "brewery_location": {
-            "city": "Munich",
-            "state": "Bavaria",
-            "country": "Germany"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 220,
@@ -297,7 +351,17 @@
             "fat": 0.5,
             "sugar": 3
         },
-        "ABV": "5.2%"
+        "ABV": "5.2%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bea",
+                "brewery_name": "10 Barrel Brewing Co - Boise"
+            }
+        ]
     },
     {
         "beer_name": "Red Ale",
@@ -308,12 +372,6 @@
             "hops": ["Cascade", "Amarillo"],
             "yeast": "Irish Ale"
         },
-        "brewery_name": "Redwood Brews",
-        "brewery_location": {
-            "city": "Dublin",
-            "state": "Leinster",
-            "country": "Ireland"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 230,
@@ -322,7 +380,17 @@
             "fat": 0.5,
             "sugar": 4
         },
-        "ABV": "5.6%"
+        "ABV": "5.6%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be8",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bec",
+                "brewery_name": "HopSip Brewery"
+            }
+        ]
     },
     {
         "beer_name": "Scottish Ale",
@@ -333,12 +401,6 @@
             "hops": ["East Kent Goldings", "Fuggle"],
             "yeast": "Scottish Ale"
         },
-        "brewery_name": "Highland Brews",
-        "brewery_location": {
-            "city": "Edinburgh",
-            "state": "Scotland",
-            "country": "United Kingdom"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 240,
@@ -347,7 +409,21 @@
             "fat": 0.5,
             "sugar": 3.5
         },
-        "ABV": "6.3%"
+        "ABV": "6.3%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be2",
+                "brewery_name": "(405) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114be7",
+                "brewery_name": "10 Barrel Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bed",
+                "brewery_name": "Brewers Delight"
+            }
+        ]
     },
     {
         "beer_name": "Session IPA",
@@ -358,12 +434,6 @@
             "malts": ["Pale Ale", "Munich"],
             "yeast": "American Ale"
         },
-        "brewery_name": "Easy Sip Brewery",
-        "brewery_location": {
-            "city": "Portland",
-            "state": "Oregon",
-            "country": "United States"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 180,
@@ -372,7 +442,21 @@
             "fat": 0,
             "sugar": 2
         },
-        "ABV": "4.8%"
+        "ABV": "4.8%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114be3",
+                "brewery_name": "(512) Brewing Co"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bef",
+                "brewery_name": "Golden Grain Brewery"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf1",
+                "brewery_name": "Barrel House Brewing"
+            }
+        ]
     },
     {
         "beer_name": "Cream Ale",
@@ -383,12 +467,6 @@
             "hops": ["Cluster", "Liberty"],
             "yeast": "American Ale"
         },
-        "brewery_name": "Smooth Sips Brewery",
-        "brewery_location": {
-            "city": "Chicago",
-            "state": "Illinois",
-            "country": "United States"
-        },
         "production_year": 2023,
         "nutritional_info": {
             "calories": 170,
@@ -397,6 +475,21 @@
             "fat": 0,
             "sugar": 1.5
         },
-        "ABV": "4.5%"
+        "ABV": "4.5%",
+        "breweries": [
+            {
+                "brewery_id": "6622e041b3b1e38b24114bea",
+                "brewery_name": "10 Barrel Brewing Co - Boise"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf0",
+                "brewery_name": "Crafty Brews"
+            },
+            {
+                "brewery_id": "6622e041b3b1e38b24114bf5",
+                "brewery_name": "Barley Brew House"
+            }
+        ]
     }
 ]
+
