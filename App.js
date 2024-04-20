@@ -9,11 +9,11 @@ import UserRoutes from "./Users/routes.js";
 import Test from "./Test.js";
 import FollowRoutes from "./Follow/routes.js";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "http://localhost:4000"
+const app = express();
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
 const DB_NAME = process.env.DB_NAME;
 
 mongoose.connect(CONNECTION_STRING, {dbName: DB_NAME}); // in .env and and environment var and the name is project
-const app = express();
 
 app.use(cors({
   credentials: true,
@@ -33,6 +33,7 @@ if (process.env.NODE_ENV !== "development") {
     domain: process.env.HTTP_SERVER_DOMAIN,
   };
 }
+
 app.use(session(sessionOptions));
 app.use(express.json());
 UserRoutes(app);

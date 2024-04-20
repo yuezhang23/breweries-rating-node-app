@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import brewerySchema from "../Breweries/schema";
 
 const beerSchema = new mongoose.Schema({
     beer_name: { type: String, required: true },
