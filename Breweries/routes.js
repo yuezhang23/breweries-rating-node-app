@@ -13,5 +13,4 @@ export default function Breweries(app) {
     res.json(response.data[0]);
   }
   app.get("/api/breweries/random", getRandomBrewries);
-
 }

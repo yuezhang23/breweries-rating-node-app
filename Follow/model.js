@@ -1,6 +1,6 @@
 import followSchema from "./schema.js";
 import mongoose from "mongoose";
 
-const Follow = mongoose.model("follows", followSchema);
+const FModel = mongoose.model("follows", followSchema);
 
-export default Follow;
+export default FModel;
