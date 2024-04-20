@@ -7,7 +7,7 @@ const brewerySchema = new mongoose.Schema(
         description : String,
         brewery_type: {
             type: String,
-            enum: ["micro", "large", "brewpub", "other"],
+            enum: ["micro", "large", "brewpub", "regional", "other"],
             default: "other",},
         phone: {type : String, required : true, default : '000-0000000'},
         address: {

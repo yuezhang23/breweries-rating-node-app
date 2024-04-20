@@ -9,7 +9,7 @@ import UserRoutes from "./Users/routes.js";
 import Test from "./Test.js";
 import FollowRoutes from "./Follow/routes.js";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "http://localhost:4000"
 const DB_NAME = process.env.DB_NAME;
 
 mongoose.connect(CONNECTION_STRING, {dbName: DB_NAME}); // in .env and and environment var and the name is project
