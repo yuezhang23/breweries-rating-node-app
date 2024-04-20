@@ -21,7 +21,7 @@ export default function UserRoutes(app) {
     const currentUser = await dao.findUserByCredentials(username, password);
     try {
       if (currentUser) {
-        req.session.user = currentUser;
+        req.session["currentUser"] = currentUser;
         res.json(currentUser);
       } else {
         throw new Error("Invalid Credential");
@@ -32,11 +32,11 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    if (!req.session.user) {
+    if (!req.session["currentUser"]) {
       res.status(401).send("Not logged in");
       return;
     }
-    const currentUser = await dao.findUserById(req.session.user._id);
+    const currentUser = req.session["currentUser"];
     res.json(currentUser);
   };
 
@@ -54,7 +54,7 @@ export default function UserRoutes(app) {
       }  
       const status = await dao.updateUser(userId, req.body);
       const currentUser = await dao.findUserById(userId);
-      req.session.user = currentUser;
+      req.session["currentUser"] = currentUser;
       res.json(currentUser);
     } catch (error) {
       res.status(400).json({ message: error.message });
@@ -116,10 +116,10 @@ export default function UserRoutes(app) {
   app.post("/api/users/signin", signin);
 
   app.post("/api/users/profile", profile);
-  app.put("/api/users/:userId", updateUser);
+  app.put("/api/users/updates/:userId", updateUser);
 
   app.get("/api/users", findAllUsers);
-  app.get("/api/users/:userId", findUserById);
+  app.get("/api/users/find/:userId", findUserById);
   app.post("/api/users/signup", signup);
   app.post("/api/users/signout", signout);
 }

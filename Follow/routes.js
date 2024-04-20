@@ -7,7 +7,7 @@ function FollowRoutes(app) {
 		const follow = await dao.followUser(follower, follows);
 		res.json(follow);
 	}
-	app.post("/api/users/follow/:follows", followUser);
+	app.post("/api/follow/:follows", followUser);
 
 	const unfollowUser = async (req, res) => {
 		const follower = req.session.user._id;
@@ -15,7 +15,7 @@ function FollowRoutes(app) {
 		const status = await dao.unfollowUser(follower, follows);
 		res.json(status);
 	}
-	app.delete("/api/users/follow/:follows", unfollowUser);
+	app.delete("/api/follow/:follows", unfollowUser);
 
 	const findFollowersOfAUser = async (req, res) => {
 		try {
@@ -26,7 +26,7 @@ function FollowRoutes(app) {
 			res.send("unable to fetch followers")
 		}
 	}
-	app.get("/api/users/follow/:follows/followers", findFollowersOfAUser);
+	app.get("/api/follow/:follows/followers", findFollowersOfAUser);
 
 	const findFollowsOfAUser = async (req, res) => {
 		try {
@@ -37,7 +37,7 @@ function FollowRoutes(app) {
 			res.send("unable to fetch follows")
 		}
 	}
-	app.get("/api/users/follow/:follower/follows", findFollowsOfAUser);
+	app.get("/api/follow/:follower/follows", findFollowsOfAUser);
 }
 
 export default FollowRoutes;
