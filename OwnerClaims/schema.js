@@ -7,6 +7,7 @@ const claimSchema = new mongoose.Schema({
   },
   brewery_ref: { type: String, required: true },
   legalName: { type: String, required: true },
+  additoinal: String,
   completed: Boolean,
   approved: Boolean
   },

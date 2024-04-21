@@ -1,6 +1,6 @@
 import * as dao from "./dao.js";
 
-export default function UserRoutes(app) {
+export default function ClaimRoutes(app) {
 
   const createClaim = async (req, res) => {
     try {

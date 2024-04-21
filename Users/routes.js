@@ -11,6 +11,15 @@ export default function UserRoutes(app) {
     }
   };
 
+  const profile = async (req, res) => {
+    if (!req.session["currentUser"]) {
+      res.status(401).send("Not logged in");
+      return;
+    }
+    const currentUser = req.session["currentUser"];
+    res.json(currentUser);
+  };
+
   const deleteUser = async (req, res) => {
     const status = await dao.deleteUser(req.params.userId);
     res.json(status);
@@ -31,14 +40,7 @@ export default function UserRoutes(app) {
     }
   };
 
-  const profile = async (req, res) => {
-    if (!req.session["currentUser"]) {
-      res.status(401).send("Not logged in");
-      return;
-    }
-    const currentUser = req.session["currentUser"];
-    res.json(currentUser);
-  };
+
 
   const updateUser = async (req, res) => {
     const { userId } = req.params;
@@ -55,6 +57,26 @@ export default function UserRoutes(app) {
       const status = await dao.updateUser(userId, req.body);
       const currentUser = await dao.findUserById(userId);
       req.session["currentUser"] = currentUser;
+      res.json(currentUser);
+    } catch (error) {
+      res.status(400).json({ message: error.message });
+    } 
+  };
+
+  const adminUpdateUser = async (req, res) => {
+    const { userId } = req.params;
+    const newUser = req.body
+    try {
+      if (!newUser.username || !newUser.password || newUser.username.trim() === "" 
+        || newUser.firstName.trim() === "" || newUser.lastName.trim() === "" || newUser.email.trim() === "") {
+        throw new Error("Username, password, first and last name and email are required.");
+      }
+      const existingUser = await dao.checkUsernameExists(newUser.username, newUser._id);
+      if (existingUser) {
+        throw new Error("Username already exists.");
+      }  
+      const status = await dao.updateUser(userId, req.body);
+      const currentUser = await dao.findUserById(userId);
       res.json(currentUser);
     } catch (error) {
       res.status(400).json({ message: error.message });
@@ -112,14 +134,15 @@ export default function UserRoutes(app) {
   };
 
   app.post("/api/users", createUser);
-  app.delete("/api/users/:userId", deleteUser);
-  app.post("/api/users/signin", signin);
-
   app.post("/api/users/profile", profile);
-  app.put("/api/users/updates/:userId", updateUser);
 
-  app.get("/api/users", findAllUsers);
+  app.post("/api/users/signin", signin);
+  app.delete("/api/users/:userId", deleteUser);
   app.get("/api/users/find/:userId", findUserById);
+  app.put("/api/users/update/:userId", updateUser);
+  app.put("/api/users/update/admin/:userId", adminUpdateUser);
+  app.get("/api/users", findAllUsers);
+
   app.post("/api/users/signup", signup);
   app.post("/api/users/signout", signout);
 }

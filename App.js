@@ -38,5 +38,6 @@ app.use(express.json());
 UserRoutes(app);
 FollowRoutes(app);
 Breweries(app);
+ClaimRoutes(app);
 Test(app);
 app.listen(process.env.PORT || 4000);
