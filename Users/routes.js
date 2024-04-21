@@ -133,16 +133,18 @@ export default function UserRoutes(app) {
     res.sendStatus(200);
   };
 
+
+
+  app.post("/api/user/signin", signin);
+  app.post("/api/user/signout", signout);
+  app.post("/api/user/profile", profile);
+  app.post("/api/user/signup", signup);
+
   app.post("/api/users", createUser);
-  app.post("/api/users/profile", profile);
 
-  app.post("/api/users/signin", signin);
   app.delete("/api/users/:userId", deleteUser);
-  app.get("/api/users/find/:userId", findUserById);
-  app.put("/api/users/update/:userId", updateUser);
-  app.put("/api/users/update/admin/:userId", adminUpdateUser);
+  app.put("/api/users/:userId", updateUser);
+  app.put("/api/users/:userId/admin", adminUpdateUser);
+  app.get("/api/users/:userId", findUserById);
   app.get("/api/users", findAllUsers);
-
-  app.post("/api/users/signup", signup);
-  app.post("/api/users/signout", signout);
 }
