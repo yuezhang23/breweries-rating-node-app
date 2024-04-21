@@ -16,5 +16,5 @@ export const updateUser = (userId, user) => model.updateOne({ _id: userId }, { $
 
 export const deleteUser = (userId) => model.deleteOne({ _id: userId });
 export const findAllUsers = () => model.find();
-export const findUserById = (userId) => model.findById(userId);
+export const findUserById = (userId) => model.findOne({_id: userId});
 export const findUsersByRole = (role) => model.find({ role: role });

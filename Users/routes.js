@@ -16,8 +16,10 @@ export default function UserRoutes(app) {
     res.json(status);
   };
 
+  
   const signin = async (req, res) => {
     const { username, password } = req.body;
+    console.log(username)
     const currentUser = await dao.findUserByCredentials(username, password);
     try {
       if (currentUser) {
@@ -74,17 +76,8 @@ export default function UserRoutes(app) {
   };
 
   const findUserById = async (req, res) => {
-    try {
-      const { userId } = req.params
-      const user = await dao.findUserById(userId);
-      if (!user) {
-        throw new Error("No user with this ID")
-      }
-      res.json(user);
-    } catch (error) {
-      res.status(400).json(
-        { message: error.message });
-    }
+    const user = await dao.findUserById(req.params.userId);
+    res.json(user);
   };
 
   const signup = async (req, res) => {

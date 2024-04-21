@@ -3,16 +3,14 @@ import mongoose from "mongoose";
 const beerSchema = new mongoose.Schema({
     beer_name: { type: String, required: true },
     flavor_profile: [{ type: String }],
-    beer_type: { type: String, required: true },
-    ingredients: {
-        hops: [{ type: String }],
-        malts: [{ type: String }],
-        yeast: { type: String }
-    },
-    breweries : [
+    beer_type: { type: String, required: true },  
+
+    brewery_id : { type: mongoose.Schema.Types.ObjectId, ref: 'breweries'},
+    brewery_name: { type: String },  
+    stores : [
         {
-            brewery_id : { type: String, required: true },
-            brewery_name: { type: String },
+            store_id :  { type: mongoose.Schema.Types.ObjectId, ref: 'stores'},
+            store_name: { type: String },
         },
     ],
     production_year: { type: Number },

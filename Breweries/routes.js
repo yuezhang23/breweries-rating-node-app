@@ -15,36 +15,38 @@ export default function Breweries(app) {
     res.json(response.data[0]);
   }
     
-    const getAllBreweriesbyAdmin = async (req, res) => {
+  
+ const getAllBreweriesbyAdmin = async (req, res) => {
+
     const response = await dao.getAllBreweries();
-    res.send(response.data);
+    res.send(response);
     }
     
     const getRandomBreweriesbyAdmin = async (req, res) => {
         const response = await dao.getRandomBrewery();
-        res.send(response.data);
+        res.send(response);
     }
     
     const getReviewsByUser = async (req, res) =>{
-        const id = req.params;
-        const response = await dao.getReviewsByUser(id);
-        res.send(response.data).pretty();
+        const {userId} = req.params;
+        const response = await dao.getReviewsByUser(userId);
+        res.send(response);
     }
     
     const sortBreweriesByLikes = async (req, res) => {
-        const count = req.params;
+        const count = parseInt(req.params.count)
         const response = await dao.sortBreweriesByLikes(count);
-        res.send(response.data);
+        res.send(response);
     }
 
     const sortBreweriesByFollowers = async (req, res) => {
-        const count = req.params;
+        const count = parseInt(req.params.count);
         const response = await dao.sortBreweriesByFollowers(count);
-        res.send(response.data);
+        res.send(response);
     }
 
     const findBreweryById = async (req, res) => {
-        const brew = await dao.findBreweryById(req.params);
+        const brew = await dao.findBreweryById(req.params.id);
         if (brew) {
             res.json(brew);
         } else {
@@ -57,8 +59,13 @@ export default function Breweries(app) {
         if (brewery) {
             res.status(400).send('this brewery has been invited');
         } else {
-            const status = await dao.createBrewery(req.body)
-            res.send(status)
+            const brew = await axios.get(`${BREW_API}/${req.body.id}`);
+            if (brew) {
+                res.send(brew)
+            } else{
+                const newBrew = await dao.createBrewery(req.body)
+                res.send(newBrew)
+            }
         }
     };
    
@@ -78,17 +85,16 @@ export default function Breweries(app) {
         res.json(status);
     };    
  
-
-  app.get("/api/breweries", getAllBreweries);
-  app.get("/api/breweries/random", getRandomBrewries);
-    app.get("/api/admin/breweries", getAllBreweriesbyAdmin);
-    app.get("/api/admin/breweries/random", getRandomBreweriesbyAdmin);
-    app.get("/api/admin/breweries/reviews/:userId", getReviewsByUser);
-    app.get("/api/admin/breweries/likes/:count", sortBreweriesByLikes);
-    app.get("/api/admin/breweries/followers/:count", sortBreweriesByFollowers);
-    app.get("/api/admin/breweries/:id", findBreweryById);
-    app.post("/api/admin/breweries", createBrewery);
-    app.put("/api/admin/breweries/:id", updateBrewery);
-    app.delete("/api/admin/breweries/:id", deleteBrewery);
+    
+app.get("/api/breweries", getAllBreweries);
+app.get("/api/breweries/random", getRandomBrewries);
+app.get("/api/admin/breweries", getAllBreweriesbyAdmin);
+app.get("/api/admin/breweries/random", getRandomBreweriesbyAdmin);
+app.get("/api/admin/breweries/reviews/:userId", getReviewsByUser);
+app.get("/api/admin/breweries/likes/:count", sortBreweriesByLikes);
+app.get("/api/admin/breweries/followers/:count", sortBreweriesByFollowers);
+app.get("/api/admin/breweries/:id", findBreweryById);
+app.post("/api/admin/breweries", createBrewery);
+app.put("/api/admin/breweries/:id", updateBrewery);
+app.delete("/api/admin/breweries/:id", deleteBrewery);
 }
-

@@ -10,10 +10,10 @@ import Test from "./Test.js";
 import FollowRoutes from "./Follow/routes.js";
 
 const app = express();
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+const CONNECTION_STRING = "mongodb+srv://bnw:bnwkanbas@cluster0.baftd5r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const DB_NAME = process.env.DB_NAME;
 
-mongoose.connect(CONNECTION_STRING, {dbName: DB_NAME}); // in .env and and environment var and the name is project
+mongoose.connect(CONNECTION_STRING, {dbName: "project"}); // in .env and and environment var and the name is project
 
 app.use(cors({
   credentials: true,
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV !== "development") {
 app.use(session(sessionOptions));
 app.use(express.json());
 UserRoutes(app);
-Test(app);
-Breweries(app);
 FollowRoutes(app);
+Breweries(app);
+Test(app);
 app.listen(process.env.PORT || 4000);
