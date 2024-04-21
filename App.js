@@ -8,6 +8,7 @@ import Breweries from "./Breweries/routes.js";
 import UserRoutes from "./Users/routes.js";
 import Test from "./Test.js";
 import FollowRoutes from "./Follow/routes.js";
+import ClaimRoutes from "./OwnerClaims/routes.js"
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 const DB_NAME = process.env.DB_NAME;
