@@ -54,6 +54,15 @@ export default function Breweries(app) {
         }
     };
 
+    const findBrewsByName = async (req, res) => {
+        const brew = await dao.findBreweryByName(req.params.name);
+        if (brew) {
+            res.json(brew);
+        } else {
+            res.status(400);  
+        }
+    };
+
     const createBrewery = async (req, res) => {
         const brewery = await dao.findBreweryById(req.body.id);
         if (brewery) {
@@ -105,6 +114,7 @@ app.get("/api/admin/breweries/reviews/:userId", getReviewsByUser);
 app.get("/api/admin/breweries/likes/:count", sortBreweriesByLikes);
 app.get("/api/admin/breweries/followers/:count", sortBreweriesByFollowers);
 app.get("/api/admin/breweries/:id", findBreweryById);
+app.get("/api/admin/breweries/name/:name", findBrewsByName);
 app.post("/api/admin/breweries", createBrewery);
 app.put("/api/admin/breweries/:id", updateBrewery);
 app.put("/api/admin/breweries/reviews/:id", updateBreweryReviews);

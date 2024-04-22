@@ -7,6 +7,8 @@ export const createBrewery = (brew) => {
 
 export const getAllBreweries = () => model.find();
 export const findBreweryById = (id) =>  model.findOne({ _id : id });
+export const findBreweryByName = (name) =>  model.find({ name : {$regex: new RegExp(name, 'i')}});
+
 
 export const updateBrewery = (id, brew) => model.updateOne({ _id: id }, { $set: brew});
 export const updateBreweryReviews = (id, review) => model.findByIdAndUpdate(id, { $set: { "reviews.$[elem]": review } },

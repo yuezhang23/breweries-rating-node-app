@@ -1,6 +1,6 @@
 import * as dao from "./dao.js";
 
-export default function UserRoutes(app) {
+export default function ClaimRoutes(app) {
 
   const createClaim = async (req, res) => {
     try {
@@ -52,4 +52,30 @@ export default function UserRoutes(app) {
     }
   };
   app.get("/api/claims/:claimId", findClaimById);
+
+  const findUserClaims = async (req, res) => {
+    
+    try {
+      const { userId } = req.params;
+      const claims = await dao.findUserClaims(userId);
+      if (!claims.length) {
+        return res.status(404).json({ message: "No pending claims found for this user." });
+      }
+      res.json(claims);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  };
+  app.get("/api/users/:userId/claims", findUserClaims);
+
+  const findPendingClaims = async (req, res) => {
+    try {
+      const { userId } = req.params;
+      const claims = await dao.findPendingClaims(userId);
+      res.json(claims);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  };
+  app.get("/api/users/:userId/claims/pending", findPendingClaims);
 }
