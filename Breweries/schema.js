@@ -25,7 +25,7 @@ const brewerySchema = new mongoose.Schema(
             {
                 userId : { type: String},
                 // userId : { type: mongoose.Schema.Types.ObjectId, ref: 'users'},
-                comments : [String,]
+                comments : { type: String},
             }
         ],
     },

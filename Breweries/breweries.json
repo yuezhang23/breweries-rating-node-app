@@ -17,8 +17,12 @@
         "followers": 8349,
         "reviews": [
             {
-                "userId": "66246b0d2b10a330f20f89c2",
-                "comments": ["Great atmosphere and friendly staff!", "Wide variety of beers."]
+                "userId": "661c9a61c2c82e0a25acac71",
+                "comments": "Great atmosphere and friendly staff!"
+            },
+            {
+                "userId": "661c9a61c2c82e0a25acac71",
+                "comments": "Wide variety of beers."
             }
         ],
         "beer_types": ["IPA", "Pale Ale"]
@@ -231,8 +235,12 @@
         "followers": 2167,
         "reviews": [
             {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": ["Loved their IPA selection!", "Cozy atmosphere."]
+                "userId": "662349598f6cf73757c9e468",
+                "comments": "Loved their IPA selection!"
+            },
+            {
+                "userId": "6621fc30a2d1e179fa3735e5",
+                "comments": "Cozy atmosphere."
             }
         ],
         "beer_types": ["Wheat Beer", "Pilsner"]
@@ -255,8 +263,8 @@
         "followers": 6668,
         "reviews": [
             {
-                "userId": "661c9e505d01f69ec219a0f1",
-                "comments": ["Great place for a cold one after work!", "Friendly staff."]
+                "userId": "6621fc30a2d1e179fa3735e5",
+                "comments": "Great place for a cold one after work! Friendly staff."
             }
         ],
         "beer_types": ["Lager", "Stout"]
@@ -279,16 +287,20 @@
         "followers": 6425,
         "reviews": [
             {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": ["The food here is amazing too!", "Great place for friends to gather.", "Try the pretzels!"]
+                "userId": "66246348508aad57d520d8ab",
+                "comments": "The food here is amazing too!"
             },
             {
-                "userId": "661c9e505d01f69ec219a0f1",
-                "comments": ["Really enjoyed the IPA!", "Friendly staff."]
+                "userId": "66246348508aad57d520d8ab",
+                "comments": "Great place for friends to gather."
             },
             {
-                "userId": "66246b0d2b10a330f20f89c2",
-                "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
+                "userId": "6625c33ab10e8dc1caa7c5f0",
+                "comments": "Really enjoyed the IPA! and Friendly staff!"
+            },
+            {
+                "userId": "6625c33ab10e8dc1caa7c5f0",
+                "comments": "Excellent brews, will definitely come back!"
             }
         ],
         "beer_types": ["Lager", "IPA"]
@@ -311,8 +323,8 @@
         "followers": 582,
         "reviews": [
             {
-                "userId": "6621fc30a2d1e179fa3735e5",
-                "comments": ["Good beer, nice ambiance.", "Live music on weekends is a plus!"]
+                "userId": "661c9e505d01f69ec219a0f1",
+                "comments": "Good beer, nice ambiance. Live music on weekends is a plus!"
             }
         ],
         "beer_types": ["Lager", "IPA"]
@@ -335,19 +347,23 @@
         "reviews": [
             {
                 "userId": "661c9a61c2c82e0a25acac71",
-                "comments": ["Great selection of local brews!", "Friendly staff.", "Outdoor seating is awesome!"]
+                "comments": "Great selection of local brews!"
             },
             {
-                "userId": "66246348508aad57d520d8ab",
-                "comments": ["Fantastic atmosphere!", "Love the beer flights."]
-            },
-            {
-                "userId": "66246b0d2b10a330f20f89c2",
-                "comments": ["Really enjoyed the seasonal beers!", "Friendly service."]
+                "userId": "661c9a61c2c82e0a25acac71",
+                "comments": "Outdoor seating is awesome!"
             },
             {
                 "userId": "6621fc30a2d1e179fa3735e5",
-                "comments": ["Great place to hang out with friends!", "Wide range of craft beers."]
+                "comments": "Fantastic atmosphere!"
+            },
+            {
+                "userId": "66244e8f0f322a7e6dad4237",
+                "comments": "Really enjoyed the seasonal beers!"
+            },
+            {
+                "userId": "66244e8f0f322a7e6dad4237",
+                "comments":  "Wide range of craft beers."
             }
         ],
         "beer_types": ["Lager", "IPA"]
@@ -369,8 +385,8 @@
         "followers": 4483,
         "reviews": [
             {
-                "userId": "662349598f6cf73757c9e468",
-                "comments": ["Great spot to chill with friends!", "Love their seasonal beers.", "Try the stout!"]
+                "userId": "66244e8f0f322a7e6dad4237",
+                "comments": "Great spot to chill with friends! And Try the stout!"
             }
         ],
         "beer_types": ["Lager", "IPA"]
@@ -393,8 +409,8 @@
         "followers": 3364,
         "reviews": [
             {
-                "userId": "662349598f6cf73757c9e468",
-                "comments": ["Loved the outdoor seating area!", "Great place to watch sports."]
+                "userId": "6625c33ab10e8dc1caa7c5f0",
+                "comments": "Loved the outdoor seating area! Great place to watch sports."
             }
         ],
         "beer_types": ["Lager", "Stout"]
@@ -416,8 +432,8 @@
         "followers": 6819,
         "reviews": [
             {
-                "userId": "6621fbefa2d1e179fa3735da",
-                "comments": ["Great beer selection and friendly staff!", "Awesome happy hour deals."]
+                "userId": "661c9a61c2c82e0a25acac71",
+                "comments": "Great beer selection and friendly staff! Awesome happy hour deals."
             }
         ],
         "beer_types": ["IPA", "Wheat Beer"]
@@ -440,8 +456,8 @@
         "followers": 9642,
         "reviews": [
             {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": ["Excellent brews, will definitely come back!", "Great atmosphere.", "Friendly staff."]
+                "userId": "6621fbefa2d1e179fa3735da",
+                "comments": "Excellent brews, will definitely come back! Great atmosphere."
             }
         ],
         "beer_types": ["Lager", "Stout"]

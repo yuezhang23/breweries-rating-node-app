@@ -5,8 +5,10 @@ const reviewsSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
     },
-    breweries_ref: String,
-    content: String
+    brewery : {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'breweries'
+    }
 }, { collection: 'reviews' });
 
 export default reviewsSchema;
