@@ -12,13 +12,13 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    console.log(req.session["currentUser"])
     if (!req.session["currentUser"]) {
       res.status(401).send("Not logged in");
       return;
     }
     const currentUser = req.session["currentUser"];
-    res.json(currentUser);
+    const user = await dao.findUserById(currentUser._id)
+    res.json(user);
   };
 
   const deleteUser = async (req, res) => {
@@ -26,14 +26,12 @@ export default function UserRoutes(app) {
     res.json(status);
   };
 
-  
   const signin = async (req, res) => {
     const { username, password } = req.body;
-    console.log(username)
     const currentUser = await dao.findUserByCredentials(username, password);
     try {
       if (currentUser) {
-        req.session.user = currentUser;
+        req.session["currentUser"] = currentUser;
         res.json(currentUser);
       } else {
         throw new Error("Invalid Credential");
@@ -42,6 +40,7 @@ export default function UserRoutes(app) {
       res.status(401).send(error.message);
     }
   };
+
 
 
   const updateUser = async (req, res) => {
@@ -58,7 +57,7 @@ export default function UserRoutes(app) {
       }  
       const status = await dao.updateUser(userId, req.body);
       const currentUser = await dao.findUserById(userId);
-      req.session.user = currentUser;
+      req.session["currentUser"] = currentUser;
       res.json(currentUser);
     } catch (error) {
       res.status(400).json({ message: error.message });
@@ -98,8 +97,17 @@ export default function UserRoutes(app) {
   };
 
   const findUserById = async (req, res) => {
-    const user = await dao.findUserById(req.params.userId);
-    res.json(user);
+    try {
+      const { userId } = req.params
+      const user = await dao.findUserById(userId);
+      if (!user) {
+        throw new Error("No user with this ID")
+      }
+      res.json(user);
+    } catch (error) {
+      res.status(400).json(
+        { message: error.message });
+    }
   };
 
   const signup = async (req, res) => {
