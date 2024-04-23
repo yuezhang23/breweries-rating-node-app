@@ -12,12 +12,25 @@ export default function ClaimRoutes(app) {
   };
   app.post("/api/claims", createClaim);
 
+  const deleteClaim = async (req, res) => {
+    try {
+      const status = await dao.deleteClaim(req.params.claimId);
+      res.json(status);
+    } catch (error) {
+      res.status(400).send("Not able to delete");
+    }
+  };
+  app.delete("/api/claims/:claimId", deleteClaim);
+
   const updateClaim = async (req, res) => {
     const { claimId } = req.params;
+    const newClaim = req.body
     try {
+      if(!newClaim.legalName) {
+        throw new Error("Legal Name is required.");
+      }
       const status = await dao.updateClaim(claimId, req.body);
-      const claim = await dao.findClaimById(claimId);
-      res.json(claim);
+      res.json(status);
     } catch (error) {
       res.status(400).json({ message: error.message });
     } 
@@ -25,25 +38,29 @@ export default function ClaimRoutes(app) {
   app.put("/api/claims/:claimId", updateClaim);
 
   const findAllClaims = async (req, res) => {
-    const { completion } = req.query;
-    if (completed !== undefined) {
-      const completedBool = completed === "true";
-      const claims = await dao.findUsersByCompletion(completedBool);
+    try {
+      const { completion } = req.query;
+      if (completion !== undefined) {
+        const completedBool = completion === "true";
+        const claims = await dao.findClaimsByCompletion(completedBool);
+        res.json(claims);
+        return;
+      }
+      const claims = await dao.findAllClaims();
       res.json(claims);
-      return;
+    } catch (err) {
+      res.status(400).json(
+        { message: err.message });
     }
-    const claims = await dao.findAllClaims();
-    res.json(claims);
-    return;
   };
   app.get("/api/claims", findAllClaims);
 
   const findClaimById = async (req, res) => {
     try {
       const { claimId } = req.params
-      const claim = await dao.findUserById(claimId);
+      const claim = await dao.findClaimById(claimId);
       if (!claim) {
-        throw new Error("No user with this ID")
+        throw new Error("No claim with this ID")
       }
       res.json(claim);
     } catch (error) {
@@ -54,13 +71,9 @@ export default function ClaimRoutes(app) {
   app.get("/api/claims/:claimId", findClaimById);
 
   const findUserClaims = async (req, res) => {
-    
     try {
       const { userId } = req.params;
       const claims = await dao.findUserClaims(userId);
-      if (!claims.length) {
-        return res.status(404).json({ message: "No pending claims found for this user." });
-      }
       res.json(claims);
     } catch (error) {
       res.status(500).json({ message: error.message });
@@ -68,7 +81,7 @@ export default function ClaimRoutes(app) {
   };
   app.get("/api/users/:userId/claims", findUserClaims);
 
-  const findPendingClaims = async (req, res) => {
+  const findPendingClaim = async (req, res) => {
     try {
       const { userId } = req.params;
       const claims = await dao.findPendingClaims(userId);
@@ -77,5 +90,5 @@ export default function ClaimRoutes(app) {
       res.status(500).json({ message: error.message });
     }
   };
-  app.get("/api/users/:userId/claims/pending", findPendingClaims);
+  app.get("/api/users/:userId/claims/pending", findPendingClaim);
 }

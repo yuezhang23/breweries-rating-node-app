@@ -6,10 +6,11 @@ const claimSchema = new mongoose.Schema({
     ref: 'users'
   },
   brewery_ref: { type: String, required: true },
+  brewery_name: String,
   legalName: { type: String, required: true },
-  additoinal: String,
+  additional: String,
   completed: Boolean,
-  approved: Boolean
+  approved: Boolean,
   },
   { collection: "claims" });
 
