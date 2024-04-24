@@ -1,0 +1,441 @@
+[
+    {
+        "id": "",
+        "name": "HopSip Brewery",
+        "brewery_type": "micro",
+        "phone": "405-8160490",
+        "address": {
+            "street": "1635 River Road",
+            "postal_code": 49684,
+            "city": "Traverse City",
+            "state_province": "Michigan",
+            "country": "United States"
+        },
+        "website_url": "http://www.405brewing.com",
+        "price_per_person": "$25-40",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Pale Ale"]
+    },
+    {
+        "id": "5128df48-79fc-4f0f-8b52-d06be54d0cec",
+        "name": "(405) Brewing Co",
+        "brewery_type": "micro",
+        "phone": "405-8160490",
+        "address": {
+            "street": "1716 Topeka St",
+            "postal_code": 73069,
+            "city": "Norman",
+            "state_province": "Oklahoma",
+            "country": "United States"
+        },
+        "website_url": "http://www.405brewing.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Wheat Beer"]
+    },
+    {
+        "id": "9c5a66c8-cc13-416f-a5d9-0a769c87d318",
+        "name": "(512) Brewing Co",
+        "brewery_type": "micro",
+        "phone": "512-9211545",
+        "address": {
+            "street": "407 Radam Ln Ste F200",
+            "postal_code": 78745,
+            "city": "Austin",
+            "state_province": "Texas",
+            "country": "United States"
+        },
+        "website_url": "http://www.512brewing.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "34e8c68b-6146-453f-a4b9-1f6cd99a5ada",
+        "name": "1 of Us Brewing Company",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+            "street": "8100 Washington Ave",
+            "postal_code": 53406,
+            "city": "Mount Pleasant",
+            "state_province": "Wisconsin",
+            "country": "United States"
+        },
+        "website_url": "https://www.1ofusbrewing.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "Stout"]
+    },
+    {
+        "id": "ef970757-fe42-416f-931d-722451f1f59c",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "619-5782311",
+        "address": {
+            "street": "1501 E St",
+            "postal_code": 92101,
+            "city": "San Diego",
+            "state_province": "California",
+            "country": "United States"
+        },
+        "website_url": "http://10barrel.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "Stout"]
+    },
+    {
+        "id": "6d14b220-8926-4521-8d19-b98a2d6ec3db",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+            "street": "62970 18th St",
+            "postal_code": 97701,
+            "city": "Bend",
+            "state_province": "Oregon",
+            "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "e2e78bd8-80ff-4a61-a65c-3bfbd9d76ce2",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+            "street": "1135 NW Galveston Ave Ste B",
+            "postal_code": 97703,
+            "city": "Bend",
+            "state_province": "Oregon",
+            "country": "United States"
+        },
+        "website_url": "",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Wheat Beer"]
+    },
+    {
+        "id": "e432899b-7f58-455f-9c7b-9a6e2130a1e0",
+        "name": "10 Barrel Brewing Co",
+        "brewery_type": "large",
+        "phone": "503-2241700",
+        "address": {
+            "street": "1411 NW Flanders St",
+            "postal_code": 97209,
+            "city": "Portland",
+            "state_province": "Oregon",
+            "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "9f1852da-c312-42da-9a31-097bac81c4c0",
+        "name": "10 Barrel Brewing Co - Bend Pub",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+            "street": "62950 NE 18th St",
+            "postal_code": 97701,
+            "city": "Bend",
+            "state_province": "Oregon",
+            "country": "United States"
+        },
+        "website_url": "",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "ea4f30c0-bce6-416b-8904-fab4055a7362",
+        "name": "10 Barrel Brewing Co - Boise",
+        "brewery_type": "large",
+        "phone": "208-3445870",
+        "address": {
+            "street": "826 W Bannock St",
+            "postal_code": 83702,
+            "city": "Boise",
+            "state_province": "Idaho",
+            "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "1988eb86-f0a2-4674-ba04-02454efa0d31",
+        "name": "10 Barrel Brewing Co - Denver",
+        "brewery_type": "large",
+        "phone": "720-5738992",
+        "address": {
+            "street": "2620 Walnut St",
+            "postal_code": 80205,
+            "city": "Denver",
+            "state_province": "Colorado",
+            "country": "United States"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "",
+        "name": "Brewers Delight",
+        "brewery_type": "micro",
+        "phone": "512-9211545",
+        "address": {
+            "street": "32 Cherry Avenue",
+            "postal_code": 10001,
+            "city": "London",
+            "state_province": "England",
+            "country": "United Kingdom"
+        },
+        "website_url": "http://www.512brewing.com",
+        "price_per_person": "£20-35",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Wheat Beer", "Pilsner"]
+    },
+    {
+        "id": "",
+        "name": "Malty Mates Brewing",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+            "street": "788 Rainy Lane",
+            "postal_code": 75001,
+            "city": "Paris",
+            "state_province": "Île-de-France",
+            "country": "France"
+        },
+        "website_url": "https://www.1ofusbrewing.com",
+        "price_per_person": "€25-45",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "Stout"]
+    },
+    {
+        "id": "",
+        "name": "Barrel House Brewing",
+        "brewery_type": "large",
+        "phone": "208-3445870",
+        "address": {
+            "street": "99 Brewer Avenue",
+            "postal_code": "200002",
+            "city": "Seoul",
+            "state_province": "Seoul",
+            "country": "South Korea"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "₩25000-40000",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "",
+        "name": "Golden Grain Brewery",
+        "brewery_type": "large",
+        "phone": "619-5782311",
+        "address": {
+            "street": "212 Hops Street",
+            "postal_code": 92101,
+            "city": "Berlin",
+            "state_province": "Berlin",
+            "country": "Germany"
+        },
+        "website_url": "http://www.10barrel.com",
+        "price_per_person": "€20-40",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "",
+        "name": "Crafty Brews",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+            "street": "45 Brewster Street",
+            "postal_code": "10010",
+            "city": "Beijing",
+            "state_province": "Beijing",
+            "country": "China"
+        },
+        "price_per_person": "¥120-200",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "",
+        "name": "Crafty Tap Room",
+        "brewery_type": "large",
+        "phone": "720-5738992",
+        "address": {
+            "street": "50 Hop Street",
+            "postal_code": "10002",
+            "city": "Dublin",
+            "state_province": "Leinster",
+            "country": "Ireland"
+        },
+        "price_per_person": "€25-45",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["Lager", "IPA"]
+    },
+    {
+        "id": "",
+        "name": "Frothy Brew Co.",
+        "brewery_type": "large",
+        "phone": "541-5851007",
+        "address": {
+            "street": "25 Lager Lane",
+            "postal_code": 97701,
+            "city": "Galway",
+            "state_province": "Connacht",
+            "country": "Ireland"
+        },
+        "website_url": "http://www.fakebrewery.com",
+        "price_per_person": "€200-600",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Stout"]
+    },
+    {
+        "id": "",
+        "name": "Hoppy Brews",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+            "street": "99 Stout Street",
+            "postal_code": 94102,
+            "city": "San Francisco",
+            "state_province": "California",
+            "country": "United States"
+        },
+        "website_url": "http://www.1ofusbrewing.com",
+        "price_per_person": "$30-50",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Pale Ale"]
+    },
+    {
+        "id": "",
+        "name": "Quirky Brews",
+        "brewery_type": "micro",
+        "phone": "512-9211545",
+        "address": {
+            "street": "78 Quirk Street",
+            "postal_code": 78745,
+            "city": "Austin",
+            "state_province": "Texas",
+            "country": "United States"
+        },
+        "website_url": "http://www.fakebrewery.com",
+        "price_per_person": "$20-35",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Pilsner"]
+    },
+    {
+        "id": "",
+        "name": "Sunny Sips Brewery",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+            "street": "123 Sunshine Blvd",
+            "postal_code": 53212,
+            "city": "Milwaukee",
+            "state_province": "Wisconsin",
+            "country": "United States"
+        },
+        "website_url": "https://www.sunnysips.com",
+        "price_per_person": "$25-40",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Stout"]
+    }
+]
