@@ -10,7 +10,7 @@ const brewerySchema = new mongoose.Schema(
         phone: {type : String, default : '000-0000000'},
         address: {
             street: {type : String},
-            postal_code: {type : Number},
+            postal_code: {type : String},
             city:  {type : String},
             state_province: {type : String},
             country: {type : String},

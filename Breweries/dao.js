@@ -5,8 +5,13 @@ export const createBrewery = (brew) => {
   return model.create(brew);
 }
 
+export const createBrews = (brews) => {
+  return model.insertMany(brews);
+}
+
 export const getAllBreweries = () => model.find();
 export const findBreweryById = (id) =>  model.findOne({ _id : id });
+export const findBreweryByRemoteId = (rid) =>  model.findOne({ id : rid });
 
 export const findBreweryByName = (name) =>  model.find({ name : {$regex: new RegExp(name, 'i')}});
 
@@ -18,7 +23,11 @@ export const updateBreweryReviews = (id, review) => model.findByIdAndUpdate(id, 
 
 export const deleteBrewery = (id) => model.deleteOne({ _id: id });
 export const getRandomBrewery = (num) => model.aggregate([{ $sample: { size: num } }]);
-export const getReviewsByUser = (uid) => model.find({}, {_id:1, name:1, reviews: 1 }).and([{"reviews.userId" : uid}])
+
+export const getReviewsByUser = (uid) => model.find({}, {_id:1, name:1, likers: 1 ,followers: 1,reviews: 1 }).and([{"reviews.userId" : uid}])
+export const getLikesByUser = (uid) => model.find({}).and([{"likers._id" : uid}])
+export const getFollowsByUser = (uid) => model.find({}).and([{"followers._id" : uid}])
+
 
 export const sortBreweriesByLikes = (count) => model.find({}).sort({ likeCount: -1 }).limit(count);
 
