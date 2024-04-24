@@ -8,23 +8,16 @@
             "street": "1635 River Road",
             "postal_code": 49684,
             "city": "Traverse City",
-            "state": "Michigan",
+            "state_province": "Michigan",
             "country": "United States"
         },
         "website_url": "http://www.405brewing.com",
         "price_per_person": "$25-40",
-        "likes": 4127,
-        "followers": 8349,
-        "reviews": [
-            {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": "Great atmosphere and friendly staff!"
-            },
-            {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": "Wide variety of beers."
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["IPA", "Pale Ale"]
     },
     {
@@ -36,13 +29,15 @@
             "street": "1716 Topeka St",
             "postal_code": 73069,
             "city": "Norman",
-            "state": "Oklahoma",
+            "state_province": "Oklahoma",
             "country": "United States"
         },
         "website_url": "http://www.405brewing.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["IPA", "Wheat Beer"]
     },
@@ -55,13 +50,15 @@
             "street": "407 Radam Ln Ste F200",
             "postal_code": 78745,
             "city": "Austin",
-            "state": "Texas",
+            "state_province": "Texas",
             "country": "United States"
         },
         "website_url": "http://www.512brewing.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -74,13 +71,15 @@
             "street": "8100 Washington Ave",
             "postal_code": 53406,
             "city": "Mount Pleasant",
-            "state": "Wisconsin",
+            "state_province": "Wisconsin",
             "country": "United States"
         },
         "website_url": "https://www.1ofusbrewing.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "Stout"]
     },
@@ -93,13 +92,15 @@
             "street": "1501 E St",
             "postal_code": 92101,
             "city": "San Diego",
-            "state": "California",
+            "state_province": "California",
             "country": "United States"
         },
         "website_url": "http://10barrel.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "Stout"]
     },
@@ -112,13 +113,15 @@
             "street": "62970 18th St",
             "postal_code": 97701,
             "city": "Bend",
-            "state": "Oregon",
+            "state_province": "Oregon",
             "country": "United States"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -131,13 +134,15 @@
             "street": "1135 NW Galveston Ave Ste B",
             "postal_code": 97703,
             "city": "Bend",
-            "state": "Oregon",
+            "state_province": "Oregon",
             "country": "United States"
         },
         "website_url": "",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["IPA", "Wheat Beer"]
     },
@@ -150,13 +155,15 @@
             "street": "1411 NW Flanders St",
             "postal_code": 97209,
             "city": "Portland",
-            "state": "Oregon",
+            "state_province": "Oregon",
             "country": "United States"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -169,13 +176,15 @@
             "street": "62950 NE 18th St",
             "postal_code": 97701,
             "city": "Bend",
-            "state": "Oregon",
+            "state_province": "Oregon",
             "country": "United States"
         },
         "website_url": "",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -188,13 +197,15 @@
             "street": "826 W Bannock St",
             "postal_code": 83702,
             "city": "Boise",
-            "state": "Idaho",
+            "state_province": "Idaho",
             "country": "United States"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -207,13 +218,15 @@
             "street": "2620 Walnut St",
             "postal_code": 80205,
             "city": "Denver",
-            "state": "Colorado",
+            "state_province": "Colorado",
             "country": "United States"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "",
-        "likes": 0,
-        "followers": 0,
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
         "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
@@ -226,23 +239,16 @@
             "street": "32 Cherry Avenue",
             "postal_code": 10001,
             "city": "London",
-            "state": "England",
+            "state_province": "England",
             "country": "United Kingdom"
         },
         "website_url": "http://www.512brewing.com",
         "price_per_person": "£20-35",
-        "likes": 7542,
-        "followers": 2167,
-        "reviews": [
-            {
-                "userId": "662349598f6cf73757c9e468",
-                "comments": "Loved their IPA selection!"
-            },
-            {
-                "userId": "6621fc30a2d1e179fa3735e5",
-                "comments": "Cozy atmosphere."
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Wheat Beer", "Pilsner"]
     },
     {
@@ -254,19 +260,16 @@
             "street": "788 Rainy Lane",
             "postal_code": 75001,
             "city": "Paris",
-            "state": "Île-de-France",
+            "state_province": "Île-de-France",
             "country": "France"
         },
         "website_url": "https://www.1ofusbrewing.com",
         "price_per_person": "€25-45",
-        "likes": 13394,
-        "followers": 6668,
-        "reviews": [
-            {
-                "userId": "6621fc30a2d1e179fa3735e5",
-                "comments": "Great place for a cold one after work! Friendly staff."
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Lager", "Stout"]
     },
     {
@@ -278,31 +281,16 @@
             "street": "99 Brewer Avenue",
             "postal_code": "200002",
             "city": "Seoul",
-            "state": "Seoul",
+            "state_province": "Seoul",
             "country": "South Korea"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "₩25000-40000",
-        "likes": 5503,
-        "followers": 6425,
-        "reviews": [
-            {
-                "userId": "66246348508aad57d520d8ab",
-                "comments": "The food here is amazing too!"
-            },
-            {
-                "userId": "66246348508aad57d520d8ab",
-                "comments": "Great place for friends to gather."
-            },
-            {
-                "userId": "6625c33ab10e8dc1caa7c5f0",
-                "comments": "Really enjoyed the IPA! and Friendly staff!"
-            },
-            {
-                "userId": "6625c33ab10e8dc1caa7c5f0",
-                "comments": "Excellent brews, will definitely come back!"
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
     {
@@ -314,19 +302,16 @@
             "street": "212 Hops Street",
             "postal_code": 92101,
             "city": "Berlin",
-            "state": "Berlin",
+            "state_province": "Berlin",
             "country": "Germany"
         },
         "website_url": "http://www.10barrel.com",
         "price_per_person": "€20-40",
-        "likes": 11862,
-        "followers": 582,
-        "reviews": [
-            {
-                "userId": "661c9e505d01f69ec219a0f1",
-                "comments": "Good beer, nice ambiance. Live music on weekends is a plus!"
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
     {
@@ -338,34 +323,15 @@
             "street": "45 Brewster Street",
             "postal_code": "10010",
             "city": "Beijing",
-            "state": "Beijing",
+            "state_province": "Beijing",
             "country": "China"
         },
         "price_per_person": "¥120-200",
-        "likes": 3167,
-        "followers": 3817,
-        "reviews": [
-            {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": "Great selection of local brews!"
-            },
-            {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": "Outdoor seating is awesome!"
-            },
-            {
-                "userId": "6621fc30a2d1e179fa3735e5",
-                "comments": "Fantastic atmosphere!"
-            },
-            {
-                "userId": "66244e8f0f322a7e6dad4237",
-                "comments": "Really enjoyed the seasonal beers!"
-            },
-            {
-                "userId": "66244e8f0f322a7e6dad4237",
-                "comments":  "Wide range of craft beers."
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
     {
@@ -377,18 +343,15 @@
             "street": "50 Hop Street",
             "postal_code": "10002",
             "city": "Dublin",
-            "state": "Leinster",
+            "state_province": "Leinster",
             "country": "Ireland"
         },
         "price_per_person": "€25-45",
-        "likes": 10751,
-        "followers": 4483,
-        "reviews": [
-            {
-                "userId": "66244e8f0f322a7e6dad4237",
-                "comments": "Great spot to chill with friends! And Try the stout!"
-            }
-        ],
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
         "beer_types": ["Lager", "IPA"]
     },
     {
@@ -400,66 +363,79 @@
             "street": "25 Lager Lane",
             "postal_code": 97701,
             "city": "Galway",
-            "state": "Connacht",
+            "state_province": "Connacht",
             "country": "Ireland"
         },
         "website_url": "http://www.fakebrewery.com",
         "price_per_person": "€200-600",
-        "likes": 17568,
-        "followers": 3364,
-        "reviews": [
-            {
-                "userId": "6625c33ab10e8dc1caa7c5f0",
-                "comments": "Loved the outdoor seating area! Great place to watch sports."
-            }
-        ],
-        "beer_types": ["Lager", "Stout"]
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Stout"]
     },
     {
         "id": "",
-        "name": "Hoppy Haven",
-        "brewery_type": "large",
-        "phone": "541-5851007",
+        "name": "Hoppy Brews",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
         "address": {
-            "street": "17 Ale Avenue",
-            "postal_code": 97701,
-            "city": "Paris",
-            "state": "Île-de-France",
-            "country": "France"
+            "street": "99 Stout Street",
+            "postal_code": 94102,
+            "city": "San Francisco",
+            "state_province": "California",
+            "country": "United States"
         },
-        "price_per_person": "€25-40",
-        "likes": 14199,
-        "followers": 6819,
-        "reviews": [
-            {
-                "userId": "661c9a61c2c82e0a25acac71",
-                "comments": "Great beer selection and friendly staff! Awesome happy hour deals."
-            }
-        ],
-        "beer_types": ["IPA", "Wheat Beer"]
+        "website_url": "http://www.1ofusbrewing.com",
+        "price_per_person": "$30-50",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Pale Ale"]
     },
     {
         "id": "",
-        "name": "Barley Brew House",
-        "brewery_type": "large",
-        "phone": "208-3445870",
+        "name": "Quirky Brews",
+        "brewery_type": "micro",
+        "phone": "512-9211545",
         "address": {
-            "street": "75 Stout Street",
-            "postal_code": 83702,
-            "city": "Berlin",
-            "state": "Berlin",
-            "country": "Germany"
+            "street": "78 Quirk Street",
+            "postal_code": 78745,
+            "city": "Austin",
+            "state_province": "Texas",
+            "country": "United States"
         },
         "website_url": "http://www.fakebrewery.com",
-        "price_per_person": "€20-200",
-        "likes": 12205,
-        "followers": 9642,
-        "reviews": [
-            {
-                "userId": "6621fbefa2d1e179fa3735da",
-                "comments": "Excellent brews, will definitely come back! Great atmosphere."
-            }
-        ],
-        "beer_types": ["Lager", "Stout"]
+        "price_per_person": "$20-35",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Pilsner"]
+    },
+    {
+        "id": "",
+        "name": "Sunny Sips Brewery",
+        "brewery_type": "micro",
+        "phone": "262-4847553",
+        "address": {
+            "street": "123 Sunshine Blvd",
+            "postal_code": 53212,
+            "city": "Milwaukee",
+            "state_province": "Wisconsin",
+            "country": "United States"
+        },
+        "website_url": "https://www.sunnysips.com",
+        "price_per_person": "$25-40",
+        "likeCount": 0,
+        "followCount": 0,
+        "followers": [],
+        "likers": [],
+        "reviews": [],
+        "beer_types": ["IPA", "Stout"]
     }
 ]
