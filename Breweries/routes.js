@@ -103,7 +103,27 @@ export default function Breweries(app) {
     const deleteBrewery = async (req, res) => {
         const status = await dao.deleteBrewery(req.params);
         res.json(status);
-    };    
+    };   
+    
+    const findFollowerFromBrew = async (req, res) => {
+        const { brId, userId } = req.params;
+        const follower = await dao.findFollowerFromBrew(brId,userId);
+        if (follower) {
+            res.json(follower);
+        } else {
+            res.json();  
+        }
+    };
+
+    const findLikerFromBrew = async (req, res) => {
+        const { brId, userId } = req.params;
+        const liker = await dao.findLikerFromBrew(brId,userId);
+        if (liker) {
+            res.json(liker);
+        } else {
+            res.json();  
+        }
+    };
  
     
 app.get("/api/breweries", getAllBreweries);
@@ -111,6 +131,10 @@ app.get("/api/breweries/random", getRandomBrewries);
 app.get("/api/admin/breweries", getAllBreweriesbyAdmin);
 app.get("/api/admin/breweries/random/:num", getRandomBreweriesbyAdmin);
 app.get("/api/admin/breweries/reviews/:userId", getReviewsByUser);
+
+app.get("/api/admin/breweries/:brId/follow/:userId", findFollowerFromBrew);
+app.get("/api/admin/breweries/:brId/like/:userId", findLikerFromBrew);
+
 app.get("/api/admin/breweries/likes/:count", sortBreweriesByLikes);
 app.get("/api/admin/breweries/followers/:count", sortBreweriesByFollowers);
 app.get("/api/admin/breweries/:id", findBreweryById);
