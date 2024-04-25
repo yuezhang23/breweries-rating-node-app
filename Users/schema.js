@@ -12,6 +12,13 @@ const userSchema = new mongoose.Schema({
       enum: ["ADMIN", "USER", "OWNER"],
       default: "USER",},
     registerDate: { type: Date, default: Date.now },
+    description: String,
+    favs : [
+      {
+        beerId : { type: mongoose.Schema.Types.ObjectId,
+        ref: 'beers'}
+      }
+  ],
   },
   { collection: "users" });
 
