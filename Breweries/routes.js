@@ -31,7 +31,7 @@ export default function Breweries(app) {
             state_province: responseR.data.state_province,
             country: responseR.data.country
         };
-        const hybridBrew = {...responseR.data, address: addressC, followCount : 1, likeCount: 1, followers : [{_id: uid}],likers : [{_id : uid}]}
+        const hybridBrew = {...responseR.data, id: rid, address: addressC, followCount : 1, likeCount: 1, followers : [{_id: uid}],likers : [{_id : uid}]}
         const newBrew = await dao.createBrewery(hybridBrew)
         res.send(newBrew);
     }
