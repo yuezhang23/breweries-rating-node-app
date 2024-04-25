@@ -9,6 +9,7 @@ import UserRoutes from "./Users/routes.js";
 import Test from "./Test.js";
 import FollowRoutes from "./Follow/routes.js";
 import ClaimRoutes from "./OwnerClaims/routes.js"
+import Beers from "./Beers/routes.js";
 
 const app = express();
 const CONNECTION_STRING = "mongodb+srv://bnw:bnwkanbas@cluster0.baftd5r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -41,5 +42,6 @@ UserRoutes(app);
 FollowRoutes(app);
 Breweries(app);
 ClaimRoutes(app);
+Beers(app)
 Test(app);
 app.listen(process.env.PORT || 4000);

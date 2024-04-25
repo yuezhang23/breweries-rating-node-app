@@ -1,236 +1,116 @@
 [
     {
-        "store_name": "Super Liquor",
-        "store_type": "Liquor Store",
-        "price_per_person": "15",
-        "phone": "000-0000000",
-        "address": {
-            "street": "123 Main St",
-            "postal_code": 12345,
-            "city": "Anytown",
-            "state": "CA",
+        "name": "Boston Brew Supplies",
+        "location": {
+            "street": "123 Beer Lane",
+            "city": "Boston",
+            "state": "MA",
             "country": "USA"
         },
-        "beer_brand": [
-            {
-                "beer_id": "623b9d",
-                "beer_name": "Heineken",
-                "quantity": 3
+        "phone": "617-555-0100",
+        "breweries": [{
+            "b_id": {
+                "$oid": "6628b70c157b2753726ac481"
+              },
+            "remote_id": "214c08f5-53a3-458a-a011-63b41d62254d"
             },
             {
-                "beer_id": "742bc1",
-                "beer_name": "Budweiser",
-                "quantity": 1
+            "b_id": {
+                "$oid": "6628b70d157b2753726ac4c6"
+              },
+            "remote_id": "9375dc3a-6315-4ef4-a5e6-35a257deb8a3"
             }
         ]
     },
     {
-        "store_name": "Happy Spirits",
-        "store_type": "Liquor Store",
-        "price_per_person": "20",
-        "phone": "000-0000000",
-        "address": {
-            "street": "456 Elm St",
-            "postal_code": 54321,
-            "city": "Smalltown",
-            "state": "NY",
+        "name": "The Hop Shop",
+        "location": {
+            "street": "456 Hops Street",
+            "city": "Boston",
+            "state": "MA",
             "country": "USA"
         },
-        "beer_brand": [
-            {
-                "beer_id": "a91ef7",
-                "beer_name": "Guinness",
-                "quantity": 2
-            }
-        ]
-    },
-    {
-        "store_name": "Quick Booze",
-        "store_type": "Convenience Store",
-        "price_per_person": "10",
-        "phone": "000-0000000",
-        "address": {
-            "street": "789 Oak St",
-            "postal_code": 98765,
-            "city": "Villagetown",
-            "state": "TX",
-            "country": "USA"
-        },
-        "beer_brand": [
-            {
-                "beer_id": "b28df3",
-                "beer_name": "Stella Artois",
-                "quantity": 4
+        "phone": "617-555-0101",
+        "breweries": [{
+            "b_id": {
+                "$oid": "6628b70c157b2753726ac481"
+              },
+            "remote_id": "214c08f5-53a3-458a-a011-63b41d62254d"
             },
             {
-                "beer_id": "348bfg",
-                "beer_name": "Corona",
-                "quantity": 2
+            "b_id": {
+                "$oid": "6628b70d157b2753726ac4c6"
+              },
+            "remote_id": "9375dc3a-6315-4ef4-a5e6-35a257deb8a3"
             }
         ]
     },
     {
-        "store_name": "Sip & Shop",
-        "store_type": "Wine Store",
-        "price_per_person": "30",
-        "phone": "000-0000000",
-        "address": {
-            "street": "321 Pine St",
-            "postal_code": 13579,
-            "city": "Mountaintown",
-            "state": "CO",
+        "name": "Ales and Tails",
+        "location": {
+            "street": "789 Ale Ave",
+            "city": "Boston",
+            "state": "MA",
             "country": "USA"
         },
-        "beer_brand": [
-            {
-                "beer_id": "6c71fg",
-                "beer_name": "Blue Moon",
-                "quantity": 3
+        "phone": "617-555-0102",
+        "breweries": [{
+            "b_id": {
+                "$oid": "6628b70c157b2753726ac481"
+              },
+            "remote_id": "214c08f5-53a3-458a-a011-63b41d62254d"
             },
             {
-                "beer_id": "d27be9",
-                "beer_name": "Sierra Nevada",
-                "quantity": 1
+            "b_id": {
+                "$oid": "6628b70d157b2753726ac4c6"
+              },
+            "remote_id": "9375dc3a-6315-4ef4-a5e6-35a257deb8a3"
             }
         ]
     },
     {
-        "store_name": "Cheers Corner",
-        "store_type": "Bar",
-        "price_per_person": "25",
-        "phone": "000-0000000",
-        "address": {
-            "street": "654 Maple St",
-            "postal_code": 24680,
-            "city": "Downtown",
-            "state": "IL",
+        "name": "Brews and Shoes",
+        "location": {
+            "street": "101 Malt Blvd",
+            "city": "Boston",
+            "state": "MA",
             "country": "USA"
         },
-        "beer_brand": [
-            {
-                "beer_id": "a82fh4",
-                "beer_name": "Samuel Adams",
-                "quantity": 1
+        "phone": "617-555-0103",
+        "breweries": [{
+            "b_id": {
+                "$oid": "6628b70c157b2753726ac481"
+              },
+            "remote_id": "214c08f5-53a3-458a-a011-63b41d62254d"
             },
             {
-                "beer_id": "c39dab",
-                "beer_name": "Pabst Blue Ribbon",
-                "quantity": 3
+            "b_id": {
+                "$oid": "6628b70d157b2753726ac4c6"
+              },
+            "remote_id": "9375dc3a-6315-4ef4-a5e6-35a257deb8a3"
             }
         ]
     },
     {
-        "store_name": "Vino Villa",
-        "store_type": "Wine Store",
-        "price_per_person": "40",
-        "phone": "000-0000000",
-        "address": {
-            "street": "987 Cedar St",
-            "postal_code": 56789,
-            "city": "Suburbia",
-            "state": "FL",
+        "name": "Grain and Growlers",
+        "location": {
+            "street": "202 Brewmaster Lane",
+            "city": "Boston",
+            "state": "MA",
             "country": "USA"
         },
-        "beer_brand": [
-            {
-                "beer_id": "812gef",
-                "beer_name": "Coors Light",
-                "quantity": 2
-            }
-        ]
-    },
-    {
-        "store_name": "Brew Haven",
-        "store_type": "Brewery",
-        "price_per_person": "50",
-        "phone": "000-0000000",
-        "address": {
-            "street": "741 Birch St",
-            "postal_code": 97531,
-            "city": "Ruraltown",
-            "state": "WA",
-            "country": "USA"
-        },
-        "beer_brand": [
-            {
-                "beer_id": "9a7cd1",
-                "beer_name": "IPA",
-                "quantity": 4
+        "phone": "617-555-0104",
+        "breweries": [{
+            "b_id": {
+                "$oid": "6628b70c157b2753726ac481"
+              },
+            "remote_id": "214c08f5-53a3-458a-a011-63b41d62254d"
             },
             {
-                "beer_id": "e72bd8",
-                "beer_name": "Pale Ale",
-                "quantity": 3
-            }
-        ]
-    },
-    {
-        "store_name": "Mellow Mart",
-        "store_type": "Convenience Store",
-        "price_per_person": "12",
-        "phone": "000-0000000",
-        "address": {
-            "street": "852 Walnut St",
-            "postal_code": 45678,
-            "city": "Smalltown",
-            "state": "NY",
-            "country": "USA"
-        },
-        "beer_brand": [
-            {
-                "beer_id": "f82d19",
-                "beer_name": "Miller Lite",
-                "quantity": 1
-            }
-        ]
-    },
-    {
-        "store_name": "The Wine Cellar",
-        "store_type": "Wine Store",
-        "price_per_person": "35",
-        "phone": "000-0000000",
-        "address": {
-            "street": "369 Cherry St",
-            "postal_code": 24680,
-            "city": "Metropolis",
-            "state": "IL",
-            "country": "USA"
-        },
-        "beer_brand": [
-            {
-                "beer_id": "a29dc7",
-                "beer_name": "Heineken",
-                "quantity": 2
-            },
-            {
-                "beer_id": "34abdf",
-                "beer_name": "Bud Light",
-                "quantity": 4
-            }
-        ]
-    },
-    {
-        "store_name": "Hops House",
-        "store_type": "Brewery",
-        "price_per_person": "45",
-        "phone": "000-0000000",
-        "address": {
-            "street": "147 Oak St",
-            "postal_code": 98765,
-            "city": "Villagetown",
-            "state": "TX",
-            "country": "USA"
-        },
-        "beer_brand": [
-            {
-                "beer_id": "6f7b12",
-                "beer_name": "Pilsner",
-                "quantity": 2
-            },
-            {
-                "beer_id": "3a8b91",
-                "beer_name": "Amber Ale",
-                "quantity": 3
+            "b_id": {
+                "$oid": "6628b70d157b2753726ac4c6"
+              },
+            "remote_id": "9375dc3a-6315-4ef4-a5e6-35a257deb8a3"
             }
         ]
     }
