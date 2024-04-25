@@ -92,3 +92,21 @@ export default function ClaimRoutes(app) {
   };
   app.get("/api/users/:userId/claims/pending", findPendingClaim);
 }
+
+
+const findClaimByBrewId = async (req, res) => {
+  try {
+    const { bid } = req.params
+    console.log(bid)
+    const claim = await dao.findClaimByBrewId(bid);
+    if (!claim) {
+      res.send({})
+    }
+    res.json(claim);
+  } catch (error) {
+    res.status(400).json(
+      { message: error.message });
+  }
+  app.get("/api/users/match/:bid/claims", findClaimByBrewId);
+};
+
