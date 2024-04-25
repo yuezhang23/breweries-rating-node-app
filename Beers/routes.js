@@ -17,6 +17,50 @@ export default function Beers(app) {
         }
     }
 
+    const getBeerById = async (req, res) => {
+        try {
+            const beerId = req.params.beerId;
+            const beer = await dao.getBeerById(beerId);
+            if (!beer) {
+                throw new Error("No beer with this ID");
+            }
+            res.json(beer);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    }
+
+    const createBeer = async (req, res) => {
+        try {
+            const beer = await dao.createBeer(req.body);
+            res.json(beer);
+        } catch (error) {
+            res.status(400).send("Name is required.");
+        }
+    }
+
+    const updateBeer = async (req, res) => {
+        const { beerId } = req.params;
+        const newBeer = req.body;
+        try {
+            const status = await dao.updateBeer(beerId, newBeer);
+            const beer = await dao.getBeerById(beerId);
+            res.json(beer);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    }
+
+    const deleteBeer = async (req, res) => {
+        const { beerId } = req.params;
+        const status = await dao.deleteBeer(beerId);
+        res.json(status);
+    }
 
     app.get("/api/beers/by-brewery/:breweryId", getAllBeers);
+
+    app.post("/api/beers", createBeer);
+    app.put("/api/beers/:beerId", updateBeer);
+    app.delete("/api/beers/:beerId", deleteBeer);
+    app.get("/api/beers/:beerId", getBeerById);
 };
