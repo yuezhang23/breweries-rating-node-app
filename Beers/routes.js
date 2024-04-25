@@ -17,6 +17,16 @@ export default function Beers(app) {
         }
     }
 
+    const getBeers = async (req, res) => {
+        try {
+            const beers = await dao.getBeers(); 
+            res.json(beers); 
+        } catch (error) {
+            console.error('Error fetching beers:', error);
+            res.status(500).send({ message: "An error occurred while fetching beers.", error: error.toString() });
+        }
+    }
+
     const getBeerById = async (req, res) => {
         try {
             const beerId = req.params.beerId;
@@ -58,7 +68,7 @@ export default function Beers(app) {
     }
 
     app.get("/api/beers/by-brewery/:breweryId", getAllBeers);
-
+    app.get("/api/beers", getBeers);
     app.post("/api/beers", createBeer);
     app.put("/api/beers/:beerId", updateBeer);
     app.delete("/api/beers/:beerId", deleteBeer);
