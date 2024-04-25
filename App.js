@@ -43,7 +43,6 @@ UserRoutes(app);
 FollowRoutes(app);
 Breweries(app);
 ClaimRoutes(app);
-Beers(app)
 Test(app);
 Brees(app);
 Stores(app);
