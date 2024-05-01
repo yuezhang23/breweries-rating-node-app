@@ -13,14 +13,16 @@ import Brees from "./Beers/routes.js";
 import Stores from "./Store/routes.js";
 
 const app = express();
-const CONNECTION_STRING = "mongodb+srv://bnw:bnwkanbas@cluster0.baftd5r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
 const DB_NAME = process.env.DB_NAME;
 
-mongoose.connect(CONNECTION_STRING, {dbName: "project"}); // in .env and and environment var and the name is project
+mongoose.connect(CONNECTION_STRING, {dbName: DB_NAME}); 
+// in .env and and environment var and the name is project
 
 app.use(cors({
   credentials: true,
-  origin: [process.env.FRONTEND_URL, "http://localhost:3000"] // in .env and environment var
+  origin: [process.env.FRONTEND_URL, "http://localhost:3000"] 
+  // in .env and environment var
 }));
 
 const sessionOptions = {
@@ -36,6 +38,7 @@ if (process.env.NODE_ENV !== "development") {
     domain: process.env.HTTP_SERVER_DOMAIN,
   };
 }
+
 
 app.use(session(sessionOptions));
 app.use(express.json());

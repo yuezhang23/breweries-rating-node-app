@@ -15,7 +15,7 @@ export default function Breweries(app) {
     const response = await axios.get(`${BREW_API}/random`);
     res.json(response.data[0]);
   }
-    
+
   const getHybridBrew = async (req, res) => {
     const {rid ,uid}= req.params
     const response = await dao.findBreweryByRemoteId(rid);
