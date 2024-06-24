@@ -33,11 +33,16 @@ const sessionOptions = {
 };
 if (process.env.NODE_ENV === "development") {
   sessionOptions.proxy = true;
-  sessionOptions.cookie = {
-    sameSite: "none",
-    secure: true,
-    domain: process.env.HTTP_SERVER_DOMAIN,
-  };
+  sessionOptions.cookie.domain = process.env.HTTP_SERVER_DOMAIN;
+  sessionOptions.cookie.secure = true;
+  sessionOptions.cookie.sameSite='none';
+
+  // sessionOptions.proxy = true;
+  // sessionOptions.cookie = {
+  //   sameSite: "none",
+  //   secure: true,
+  //   domain: process.env.HTTP_SERVER_DOMAIN,
+  // };
 }
 
 
