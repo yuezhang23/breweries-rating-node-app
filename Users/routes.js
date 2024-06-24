@@ -17,7 +17,9 @@ export default function UserRoutes(app) {
     if (!req.session["currentUser"]) {
       return;
     }
-    const currentUser = req.session["currentUser"];
+    // const currentUser = req.session["currentUser"];
+    const currentUser = req.body;
+    console.log(currentUser)
     // if (globalUser == null) {
     //   return;
     // }
