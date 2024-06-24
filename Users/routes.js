@@ -2,6 +2,8 @@ import * as dao from "./dao.js";
 
 export default function UserRoutes(app) {
 
+  let globalUser = null;
+
   const createUser = async (req, res) => {
     try {
       const user = await dao.createUser(req.body);
