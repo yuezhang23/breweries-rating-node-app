@@ -14,10 +14,11 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    // if (!req.session["currentUser"]) {
-    //   return;
-    // }
-    const currentUser = req.session["currentUser"] ?? globalUser;
+    console.log(req.session)
+    if (!req.session["currentUser"]) {
+      return;
+    }
+    const currentUser = req.session["currentUser"];
     // if (globalUser == null) {
     //   return;
     // }
@@ -37,7 +38,9 @@ export default function UserRoutes(app) {
     try {
       if (currentUser) {
         req.session["currentUser"] = currentUser;
-        globalUser = currentUser;
+        console.log(req.session)
+
+        // globalUser = currentUser;
         res.json(currentUser);
       } else {
         throw new Error("Invalid Credential");
@@ -139,7 +142,7 @@ export default function UserRoutes(app) {
 
   const signout = (req, res) => {
     req.session.destroy();
-    globalUser = null;
+    // globalUser = null;
     res.sendStatus(200);
   };
 
