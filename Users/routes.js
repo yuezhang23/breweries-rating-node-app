@@ -2,7 +2,7 @@ import * as dao from "./dao.js";
 
 export default function UserRoutes(app) {
 
-  // let globalUser = null;
+  let globalUser = null;
 
   const createUser = async (req, res) => {
     try {
@@ -14,12 +14,10 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
-    if (!req.session["currentUser"]) {
-      return;
-    }
-    // const currentUser = req.session["currentUser"];
-    const currentUser = req.body;
-    console.log(currentUser)
+    // if (!req.session["currentUser"]) {
+    //   return;
+    // }
+    const currentUser = req.session["currentUser"] ?? globalUser;
     // if (globalUser == null) {
     //   return;
     // }
@@ -39,7 +37,7 @@ export default function UserRoutes(app) {
     try {
       if (currentUser) {
         req.session["currentUser"] = currentUser;
-        // globalUser = currentUser;
+        globalUser = currentUser;
         res.json(currentUser);
       } else {
         throw new Error("Invalid Credential");
@@ -141,7 +139,7 @@ export default function UserRoutes(app) {
 
   const signout = (req, res) => {
     req.session.destroy();
-    // globalUser = null;
+    globalUser = null;
     res.sendStatus(200);
   };
 
